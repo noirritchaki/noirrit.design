@@ -70,34 +70,45 @@ const Navbar = () => {
 
               {/* start of the work list */}
 
-              <motion.div
-                className="relative w-fit"
-                whileHover={{ scale: 1.05 }}
-                transition={{ duration: 0.3 }}
+              <div
+                className="relative group"
+                // whileHover={{ scale: 1.05 }}
+                // transition={{ duration: 0.3 }}
+                // the "group" here is what helps to control the hover state of child elements
               >
-                <a
-                  href="#"
-                  className="relative inline-flex flex-col gap-1 py-2 no-underline  text-black text-black"
-                >
-                  <span className="underline decoration-zinc-100 underline-offset-2 decoration-2 hover:decoration-transparent">
-                    cashless claims(placeholder)
-                  </span>
-                  <span className="text-sm font-normal text-zinc-400">
-                    2024
-                  </span>
+                <motion.div className="relative">
+                  <a
+                    href="#"
+                    className="relative inline-flex flex-col gap-1 py-2 no-underline  text-black text-black"
+                    // whileHover={{ scale: 1.05 }}
+                    // transition={{ duration: 0.3 }}
+                  >
+                    <span className="underline decoration-zinc-100 underline-offset-2 decoration-2 cursor-pointer">
+                      cashless claims(placeholder)
+                    </span>
+                    <span className="text-sm font-normal text-zinc-400">
+                      2024
+                    </span>
+                  </a>
 
                   {/* case study preview on hover */}
 
-                  <motion.img
-                    src={test}
-                    alt="preview image"
-                    className="absolute top-[-10px] left-[210%] w-32 h-32 object-cover rounded-lg shadow-lg"
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    whileHover={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.3 }}
-                  />
-                </a>
-              </motion.div>
+                  {/* image preview */}
+
+                  <motion.div className="absolute top-[-20px] left-[200%] w-80 h-64 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <img
+                      src={test}
+                      alt="preview image"
+                      className="w-full h-full object-cover rounded-lg shadow-lg"
+                      // group-hover:opacity-100: The image becomes visible (opacity-100) when hovering over any part of the parent container with the group class.
+                      // initial={{ opacity: 0, scale: 0.9 }}
+                      // animate={{ opacity: 0, scale: 1 }}
+                      // whileHover={{ opacity: 1, scale: 1 }}
+                      // transition={{ duration: 0.3 }}
+                    />
+                  </motion.div>
+                </motion.div>
+              </div>
 
               <span className="inline w-fit">
                 <a
