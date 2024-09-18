@@ -1,5 +1,7 @@
 import logo from "../assets/logo.svg";
 import { motion } from "framer-motion";
+import me from "../assets/me.png";
+import test from "../assets/test.png";
 
 const Navbar = () => {
   return (
@@ -15,7 +17,7 @@ const Navbar = () => {
             className="flex flex-col gap-24 origin-left"
             initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
           >
             <div className="flex flex-row items-top justify-between">
               <div className="flex flex-col gap-1 w-fit">
@@ -35,35 +37,67 @@ const Navbar = () => {
               <div className="flex flex-row gap-4">
                 <a
                   href="/about"
-                  className=" text-zinc-400 underline decoration-zinc-100 underline-offset-2 decoration-2 hover:decoration-gray-300"
+                  className="inline font-light text-zinc-400 underline decoration-zinc-100 underline-offset-2 decoration-2 hover:decoration-gray-300"
+                  style={{ fontSize: "14px" }}
                 >
                   about
                 </a>
                 <a
                   href="/connect"
-                  className="text-zinc-400 underline decoration-zinc-100 underline-offset-2 decoration-2 hover:decoration-gray-300"
+                  className="inline font-light text-zinc-400 underline decoration-zinc-100 underline-offset-2 decoration-2 hover:decoration-gray-300"
+                  style={{ fontSize: "14px" }}
                 >
                   connect
                 </a>
               </div>
             </div>
+            {/* <div className="flex justify-center">
+              <img
+                src={me}
+                alt="an image of me"
+                width={512}
+                height={512}
+                className="object-cover"
+              />
+            </div> */}
+
+            {/* work section */}
+
             <div className="z-10 flex flex-col gap-2 w-fit shrink-0">
               <h2 className="inline font-semibold" style={{ fontSize: "14px" }}>
                 work
               </h2>
-              <span className="inline w-fit">
+
+              {/* start of the work list */}
+
+              <motion.div
+                className="relative w-fit"
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.3 }}
+              >
                 <a
                   href="#"
                   className="relative inline-flex flex-col gap-1 py-2 no-underline  text-black text-black"
                 >
                   <span className="underline decoration-zinc-100 underline-offset-2 decoration-2 hover:decoration-transparent">
-                    cashless claims
+                    cashless claims(placeholder)
                   </span>
                   <span className="text-sm font-normal text-zinc-400">
                     2024
                   </span>
+
+                  {/* case study preview on hover */}
+
+                  <motion.img
+                    src={test}
+                    alt="preview image"
+                    className="absolute top-[-10px] left-[210%] w-32 h-32 object-cover rounded-lg shadow-lg"
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileHover={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.3 }}
+                  />
                 </a>
-              </span>
+              </motion.div>
 
               <span className="inline w-fit">
                 <a
@@ -71,7 +105,7 @@ const Navbar = () => {
                   className="relative inline-flex flex-col gap-1 py-2 no-underline  text-black text-black"
                 >
                   <span className="underline decoration-zinc-100 underline-offset-2 decoration-2 hover:decoration-transparent">
-                    plum health wallet
+                    plum health wallet(placeholder)
                   </span>
                   <span className="text-sm font-normal text-zinc-400">
                     2024
