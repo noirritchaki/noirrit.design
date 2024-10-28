@@ -4,6 +4,7 @@ import me from "../assets/me.png";
 import test from "../assets/test.png";
 import styles from "./Navbar.module.css";
 import WorkLink from "./WorkLink";
+import About from "./About";
 
 const Navbar = () => {
   return (
@@ -16,7 +17,7 @@ const Navbar = () => {
             </a>
           </div>
           <motion.div
-            className="flex flex-col gap-24 origin-left"
+            className="flex flex-col gap-12 origin-left"
             initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
@@ -29,8 +30,9 @@ const Navbar = () => {
                 <h2 className="inline font-light" style={{ fontSize: "14px" }}>
                   <span>product designer at </span>
                   <a
+                    target="_blank"
                     href="https://www.plumhq.com/"
-                    className="underline decoration-zinc-100 underline-offset-2 decoration-2 hover:decoration-gray-300"
+                    className="underline decoration-zinc-100 underline-offset-2 decoration-2 hover:decoration-gray-300 border-b"
                   >
                     PlumHQ
                   </a>
@@ -38,7 +40,7 @@ const Navbar = () => {
               </div>
               <div className="flex flex-row gap-4">
                 <a
-                  href="/about"
+                  href="About.jsx"
                   className="inline font-light text-zinc-400 underline decoration-zinc-100 underline-offset-2 decoration-2 hover:decoration-gray-300"
                   style={{ fontSize: "14px" }}
                 >
@@ -63,6 +65,10 @@ const Navbar = () => {
               />
             </div> */}
 
+            {/* separator  */}
+
+            <div className="w-1/12 h-px bg-gray-200"></div>
+
             {/* work section */}
 
             <div className="z-10 flex flex-col gap-2 w-fit shrink-0">
@@ -74,20 +80,28 @@ const Navbar = () => {
 
               <WorkLink
                 showcase={test}
-                title="cashless claims(placeholder)"
+                title="plum health wallet"
                 year={2024}
               />
 
               <WorkLink
                 showcase={test}
-                title="plum health wallet(placeholder)"
+                title="plum health wallet"
                 year={2024}
               />
               <WorkLink
                 showcase={test}
-                title="cashless claims(placeholder)"
+                title="plum health wallet"
                 year={2024}
               />
+            </div>
+
+            {/* side stuff */}
+
+            <div className="z-10 flex flex-col gap-2 w-fit shrink-0">
+              <h2 className="inline font-semibold" style={{ fontSize: "14px" }}>
+                stuff i do on the side
+              </h2>
             </div>
           </motion.div>
         </div>

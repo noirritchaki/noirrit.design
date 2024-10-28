@@ -4,20 +4,40 @@ import styles from "./Navbar.module.css";
 const WorkLink = ({ showcase, title, year }) => {
   return (
     <div
-      className="relative group hover:bg-zinc-100 hover:ease-in duration-300"
+      className="relative group -ml-4"
+      initial={{ opacity: 0.8, scale: 0.95 }}
+      whileHover={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.4, ease: "easeInOut" }}
       // the "group" here is what helps to control the hover state of child elements
     >
       <motion.div className="relative">
         <a
           href="#"
-          className="relative inline-flex flex-col gap-1 py-2 no-underline  text-black"
+          className="relative p-4 transition-all duration-300 inline-flex flex-col gap-1 py-2 no-underline text-black"
         >
-          <span className="underline decoration-zinc-100 underline-offset-2 decoration-2 hover:decoration-transparent hover:ease-in duration-300 cursor-pointer">
+          <motion.span
+            className="underline decoration-zinc-100 underline-offset-2 decoration-2 cursor-pointer"
+            initial={{ color: "#333" }}
+            whileHover={{ color: "#000", transition: { duration: 0.2 } }}
+          >
             {title}
-          </span>
-          <span className="text-sm font-normal text-zinc-400">{year}</span>
+          </motion.span>
+          <motion.span
+            className="text-sm font-normal text-zinc-400"
+            initial={{ color: "#888" }}
+            whileHover={{ color: "#444", transition: { duration: 0.2 } }}
+          >
+            {year}
+          </motion.span>
         </a>
 
+        {/* adding hover on text  */}
+        <motion.div
+          className="absolute inset-0 group-hover:bg-zinc-100 group-hover:rounded-lg transition-all duration-300 -z-10"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.3 }}
+        ></motion.div>
         {/* case study preview on hover */}
 
         {/* image preview */}
