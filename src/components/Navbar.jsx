@@ -4,7 +4,7 @@ import me from "../assets/me.png";
 import test from "../assets/test.png";
 import styles from "./Navbar.module.css";
 import WorkLink from "./WorkLink";
-import About from "./About";
+// import About from "./About";
 
 const Navbar = () => {
   return (
