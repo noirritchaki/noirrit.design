@@ -42,7 +42,7 @@ const WorkLink = ({ showcase, title, year }) => {
 
         {/* image preview */}
 
-        <motion.div
+        {/* <motion.div
           className="absolute top-[-20px] left-[200%] w-80 h-64 opacity-0 transition-opacity duration-300 pointer-events-none group-hover:opacity-100"
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.3 }}
@@ -57,7 +57,7 @@ const WorkLink = ({ showcase, title, year }) => {
             // whileHover={{ opacity: 1, scale: 1 }}
             // transition={{ duration: 0.3 }}
           />
-        </motion.div>
+        </motion.div> */}
       </motion.div>
     </div>
   );

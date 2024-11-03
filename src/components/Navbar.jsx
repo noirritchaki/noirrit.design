@@ -25,7 +25,7 @@ const Navbar = () => {
               <a alt="about" aria-label="Go to about" href="/">
                 <Link
                   to="/about"
-                  className="inline font-normal underline-offset-2 decoration-2"
+                  className="inline font-normal underline-offset-2 hover:underline decoration-[#D0D5DD]"
                   style={{ fontSize: "14px", color: "#667085" }}
                 >
                   about
@@ -34,7 +34,7 @@ const Navbar = () => {
               <a alt="connect" aria-label="Go to connect" href="/">
                 <Link
                   to="/connect"
-                  className="inline font-normal underline-offset-2 decoration-2"
+                  className="inline font-normal underline-offset-2 hover:underline decoration-[#D0D5DD]"
                   style={{ fontSize: "14px", color: "#667085" }}
                 >
                   connect
@@ -42,8 +42,10 @@ const Navbar = () => {
               </a>
               <a alt="resume" aria-label="Go to resume" href="/">
                 <Link
-                  to="/resume"
-                  className="inline font-normal underline-offset-2 decoration-2"
+                  to="https://read.cv/noirrit"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline font-normal underline-offset-2 hover:underline decoration-[#D0D5DD]"
                   style={{ fontSize: "14px", color: "#667085" }}
                 >
                   resume
@@ -129,7 +131,7 @@ const Navbar = () => {
               >
                 outside of work, i’m all about brewing{" "}
                 <span
-                  className="inline font-medium hover:underline trasition duration-300"
+                  className="inline font-medium hover:underline trasition duration-300 cursor-pointer"
                   style={{ color: "#182230" }}
                 >
                   {" "}
@@ -137,7 +139,7 @@ const Navbar = () => {
                 </span>
                 , taking care of my{" "}
                 <span
-                  className="inline font-medium hover:underline trasition duration-300"
+                  className="inline font-medium hover:underline trasition duration-300 cursor-pointer"
                   style={{ color: "#182230" }}
                 >
                   {" "}
@@ -145,7 +147,7 @@ const Navbar = () => {
                 </span>
                 , and{" "}
                 <span
-                  className="inline font-medium hover:underline trasition duration-300"
+                  className="inline font-medium hover:underline trasition duration-300 cursor-pointer"
                   style={{ color: "#182230" }}
                 >
                   {" "}
@@ -170,7 +172,7 @@ const Navbar = () => {
 
             <div className="z-10 flex flex-col gap-2 w-fit shrink-0">
               <h2
-                className="inline font-medium"
+                className="inline font-normal mb-[16px]"
                 style={{ fontSize: "14px", color: "#667085" }}
               >
                 work
