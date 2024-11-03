@@ -16,7 +16,7 @@ const WorkLink = ({ showcase, title, year }) => {
           className="relative p-4 transition-all duration-300 inline-flex flex-col gap-1 py-2 no-underline text-black"
         >
           <motion.span
-            className="underline decoration-zinc-100 underline-offset-2 decoration-2 cursor-pointer"
+            className="underline decoration-zinc-100 underline-offset-2 cursor-pointer"
             initial={{ color: "#333" }}
             whileHover={{ color: "#000", transition: { duration: 0.2 } }}
           >

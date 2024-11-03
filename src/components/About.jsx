@@ -134,20 +134,65 @@ const About = () => {
                     hitting the high notes yet, but it’s a fun journey!
                   </h1>
                 </div>
-                <div className="flex flex-col gap-1 mt-10">
-                  <h1
-                    className="inline font-medium"
-                    style={{ fontSize: "18px", color: "#182230" }}
-                  >
-                    hobbies
-                  </h1>
-                  <h2
-                    className="inline font-normal max-w-[500px]"
-                    style={{ fontSize: "14px", color: "#98A2B3" }}
-                  >
-                    i've got quite a few hobbies but honestly that's the best
-                    part. trying out new things is always the best part
-                  </h2>
+                <div className="flex flex-col gap-10 mt-10">
+                  <div className="flex flex-col gap-1">
+                    <h1
+                      className="inline font-medium"
+                      style={{ fontSize: "18px", color: "#182230" }}
+                    >
+                      hobbies
+                    </h1>
+                    <h2
+                      className="inline font-normal max-w-[500px]"
+                      style={{ fontSize: "14px", color: "#98A2B3" }}
+                    >
+                      i've got quite a few hobbies but honestly that's the best
+                      part. trying out new things is always super fun
+                    </h2>
+                  </div>
+
+                  {/* HOBBIES */}
+
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
+                    <motion.div
+                      whileHover={{ scale: 1.05 }}
+                      className="flex flex-col justify-center p-4 rounded-lg"
+                      style={{ backgroundColor: "#f9f9f9" }}
+                    >
+                      {/* HOBBY CARDS */}
+
+                      <div className="aspect-square flex flex-col justify-between h-full">
+                        <div className="text-sm text-[#667085]">
+                          hobbies / bouldering
+                        </div>
+
+                        {/* TAGS
+
+                        <div className="flex gap-2 mb-4">
+                          <span className="px-2 py-1 text-xs font-medium text-[#182230] bg-[#D0D5DD] rounded-lg">
+                            espresso
+                          </span>
+                        </div> */}
+
+                        {/* TITLE */}
+
+                        <div className="flex flex-col gap-1">
+                          <h2
+                            className="font-semibold"
+                            style={{ fontSize: "32px", color: "#182230" }}
+                          >
+                            6a boulder
+                          </h2>
+
+                          {/* SUB-TEXT */}
+
+                          <p className="text-sm font-normal text-[#667085]">
+                            a nice warmup 6a climb
+                          </p>
+                        </div>
+                      </div>
+                    </motion.div>
+                  </div>
                 </div>
               </div>
             </div>
