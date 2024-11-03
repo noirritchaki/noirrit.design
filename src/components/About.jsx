@@ -134,6 +134,21 @@ const About = () => {
                     hitting the high notes yet, but it’s a fun journey!
                   </h1>
                 </div>
+                <div className="flex flex-col gap-1 mt-10">
+                  <h1
+                    className="inline font-medium"
+                    style={{ fontSize: "18px", color: "#182230" }}
+                  >
+                    hobbies
+                  </h1>
+                  <h2
+                    className="inline font-normal max-w-[500px]"
+                    style={{ fontSize: "14px", color: "#98A2B3" }}
+                  >
+                    i've got quite a few hobbies but honestly that's the best
+                    part. trying out new things is always the best part
+                  </h2>
+                </div>
               </div>
             </div>
           </motion.div>
