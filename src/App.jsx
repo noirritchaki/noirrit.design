@@ -6,7 +6,6 @@ import About from "./components/About";
 const Home = () => (
   <div>
     <Navbar />
-    <div>Home</div>
   </div>
 );
 

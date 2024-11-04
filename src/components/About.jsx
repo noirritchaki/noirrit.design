@@ -153,10 +153,11 @@ const About = () => {
 
                   {/* HOBBIES */}
 
-                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-2">
+                    {/* CARD 1 */}
                     <motion.div
                       whileHover={{ scale: 1.05 }}
-                      className="flex flex-col justify-center p-4 rounded-lg"
+                      className="flex flex-col justify-center p-4 rounded-lg break-inside-avoid row-span-1"
                       style={{ backgroundColor: "#f9f9f9" }}
                     >
                       {/* HOBBY CARDS */}
@@ -166,13 +167,37 @@ const About = () => {
                           hobbies / bouldering
                         </div>
 
-                        {/* TAGS
+                        {/* TITLE */}
 
-                        <div className="flex gap-2 mb-4">
-                          <span className="px-2 py-1 text-xs font-medium text-[#182230] bg-[#D0D5DD] rounded-lg">
-                            espresso
-                          </span>
-                        </div> */}
+                        <div className="flex flex-col gap-1">
+                          <h2
+                            className="font-semibold"
+                            style={{ fontSize: "32px", color: "#182230" }}
+                          >
+                            6a boulder 1
+                          </h2>
+
+                          {/* SUB-TEXT */}
+
+                          <p className="text-sm font-normal text-[#667085]">
+                            a nice warmup 6a climb
+                          </p>
+                        </div>
+                      </div>
+                    </motion.div>
+
+                    {/* CARD 2 */}
+                    <motion.div
+                      whileHover={{ scale: 1.05 }}
+                      className="flex flex-col justify-center p-4 rounded-lg break-inside-avoid row-span-3"
+                      style={{ backgroundColor: "#f9f9f9" }}
+                    >
+                      {/* HOBBY CARDS */}
+
+                      <div className="aspect-square flex flex-col justify-between h-full">
+                        <div className="text-sm text-[#667085]">
+                          hobbies / bouldering
+                        </div>
 
                         {/* TITLE */}
 
@@ -181,7 +206,135 @@ const About = () => {
                             className="font-semibold"
                             style={{ fontSize: "32px", color: "#182230" }}
                           >
-                            6a boulder
+                            6a boulder 2
+                          </h2>
+
+                          {/* SUB-TEXT */}
+
+                          <p className="text-sm font-normal text-[#667085]">
+                            a nice warmup 6a climb
+                          </p>
+                        </div>
+                      </div>
+                    </motion.div>
+
+                    {/* CARD 3 */}
+                    <motion.div
+                      whileHover={{ scale: 1.05 }}
+                      className="flex flex-col justify-center p-4 rounded-lg break-inside-avoid row-span-1"
+                      style={{ backgroundColor: "#f9f9f9" }}
+                    >
+                      {/* HOBBY CARDS */}
+
+                      <div className="aspect-square flex flex-col justify-between h-full">
+                        <div className="text-sm text-[#667085]">
+                          hobbies / bouldering
+                        </div>
+
+                        {/* TITLE */}
+
+                        <div className="flex flex-col gap-1">
+                          <h2
+                            className="font-semibold"
+                            style={{ fontSize: "32px", color: "#182230" }}
+                          >
+                            6a boulder 3
+                          </h2>
+
+                          {/* SUB-TEXT */}
+
+                          <p className="text-sm font-normal text-[#667085]">
+                            a nice warmup 6a climb
+                          </p>
+                        </div>
+                      </div>
+                    </motion.div>
+
+                    {/* CARD 4 */}
+                    <motion.div
+                      whileHover={{ scale: 1.05 }}
+                      className="flex flex-col justify-center p-4 rounded-lg break-inside-avoid row-span-3"
+                      style={{ backgroundColor: "#f9f9f9" }}
+                    >
+                      {/* HOBBY CARDS */}
+
+                      <div className="aspect-square flex flex-col justify-between h-full">
+                        <div className="text-sm text-[#667085]">
+                          hobbies / bouldering
+                        </div>
+
+                        {/* TITLE */}
+
+                        <div className="flex flex-col gap-1">
+                          <h2
+                            className="font-semibold"
+                            style={{ fontSize: "32px", color: "#182230" }}
+                          >
+                            6a boulder 4
+                          </h2>
+
+                          {/* SUB-TEXT */}
+
+                          <p className="text-sm font-normal text-[#667085]">
+                            a nice warmup 6a climb
+                          </p>
+                        </div>
+                      </div>
+                    </motion.div>
+
+                    {/* CARD 5 */}
+                    <motion.div
+                      whileHover={{ scale: 1.05 }}
+                      className="flex flex-col justify-center p-4 rounded-lg break-inside-avoid row-span-2"
+                      style={{ backgroundColor: "#f9f9f9" }}
+                    >
+                      {/* HOBBY CARDS */}
+
+                      <div className="aspect-square flex flex-col justify-between h-full">
+                        <div className="text-sm text-[#667085]">
+                          hobbies / bouldering
+                        </div>
+
+                        {/* TITLE */}
+
+                        <div className="flex flex-col gap-1">
+                          <h2
+                            className="font-semibold"
+                            style={{ fontSize: "32px", color: "#182230" }}
+                          >
+                            6a boulder 5
+                          </h2>
+
+                          {/* SUB-TEXT */}
+
+                          <p className="text-sm font-normal text-[#667085]">
+                            a nice warmup 6a climb
+                          </p>
+                        </div>
+                      </div>
+                    </motion.div>
+
+                    {/* CARD 6 */}
+                    <motion.div
+                      whileHover={{ scale: 1.05 }}
+                      className="flex flex-col justify-center p-4 rounded-lg break-inside-avoid row-span-1"
+                      style={{ backgroundColor: "#f9f9f9" }}
+                    >
+                      {/* HOBBY CARDS */}
+
+                      <div className="aspect-square flex flex-col justify-between h-full">
+                        <div className="text-sm text-[#667085]">
+                          hobbies / bouldering
+                        </div>
+
+                        {/* TITLE */}
+
+                        <div className="flex flex-col gap-1">
+                          <h2
+                            className="font-semibold"
+                            style={{ fontSize: "32px", color: "#182230" }}
+                          >
+                            6a boulder 6
                           </h2>
 
                           {/* SUB-TEXT */}
