@@ -6,6 +6,9 @@ import test from "../assets/test.png";
 import styles from "./Navbar.module.css";
 import WorkLink from "./WorkLink";
 import About from "./About";
+import game from "../assets/video-game.svg";
+import album from "../assets/album.svg";
+import book from "../assets/book.svg";
 
 const Navbar = () => {
   return (
@@ -54,7 +57,7 @@ const Navbar = () => {
             </div>
           </div>
           <motion.div
-            className="flex flex-col gap-14 origin-left"
+            className="flex flex-col gap-16 origin-left"
             initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
@@ -202,10 +205,74 @@ const Navbar = () => {
 
             <div className="z-10 flex flex-col gap-2 w-fit shrink-0">
               <h2
-                className="inline font-medium"
+                className="inline font-normal mb-[16px]"
                 style={{ fontSize: "14px", color: "#667085" }}
               >
                 few things i’m enjoying currently
+              </h2>
+              <div className="flex flex-col gap-8">
+                <div className="flex flex-row gap-2">
+                  <img src={game} />
+                  <div className="flex flex-col gap-1">
+                    <h2
+                      className="inline font-medium underline"
+                      style={{ fontSize: "14px", color: "#182230" }}
+                    >
+                      metaphor: refantazio
+                    </h2>
+                    <p
+                      className="inline font-normal"
+                      style={{ fontSize: "14px", color: "#667085" }}
+                    >
+                      video game
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex flex-row gap-2">
+                  <img src={album} />
+                  <div className="flex flex-col gap-1">
+                    <h2
+                      className="inline font-medium underline"
+                      style={{ fontSize: "14px", color: "#182230" }}
+                    >
+                      ten days
+                    </h2>
+                    <p
+                      className="inline font-normal"
+                      style={{ fontSize: "14px", color: "#667085" }}
+                    >
+                      fred again..
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex flex-row gap-2">
+                  <img src={book} />
+                  <div className="flex flex-col gap-1">
+                    <h2
+                      className="inline font-medium underline"
+                      style={{ fontSize: "14px", color: "#182230" }}
+                    >
+                      world atlas of coffee
+                    </h2>
+                    <p
+                      className="inline font-normal"
+                      style={{ fontSize: "14px", color: "#667085" }}
+                    >
+                      james hoffman
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex flex-col">
+              <h2
+                className="inline font-normal mb-[16px]"
+                style={{ fontSize: "14px", color: "#667085" }}
+              >
+                connect
               </h2>
             </div>
           </motion.div>

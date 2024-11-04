@@ -153,7 +153,7 @@ const About = () => {
 
                   {/* HOBBIES */}
 
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-2">
+                  <div className="grid grid-cols-1 grid-rows-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-2">
                     {/* CARD 1 */}
                     <motion.div
                       whileHover={{ scale: 1.05 }}
@@ -162,7 +162,7 @@ const About = () => {
                     >
                       {/* HOBBY CARDS */}
 
-                      <div className="aspect-square flex flex-col justify-between h-full">
+                      <div className="aspect-square flex flex-col justify-between h-full cursor-nesw-resize">
                         <div className="text-sm text-[#667085]">
                           hobbies / bouldering
                         </div>
@@ -189,12 +189,12 @@ const About = () => {
                     {/* CARD 2 */}
                     <motion.div
                       whileHover={{ scale: 1.05 }}
-                      className="flex flex-col justify-center p-4 rounded-lg break-inside-avoid row-span-3"
+                      className="flex flex-col justify-center p-4 rounded-lg break-inside-avoid row-span-2"
                       style={{ backgroundColor: "#f9f9f9" }}
                     >
                       {/* HOBBY CARDS */}
 
-                      <div className="aspect-square flex flex-col justify-between h-full">
+                      <div className="aspect-square flex flex-col justify-between h-full cursor-nesw-resize">
                         <div className="text-sm text-[#667085]">
                           hobbies / bouldering
                         </div>
@@ -226,7 +226,7 @@ const About = () => {
                     >
                       {/* HOBBY CARDS */}
 
-                      <div className="aspect-square flex flex-col justify-between h-full">
+                      <div className="aspect-square flex flex-col justify-between h-full cursor-nesw-resize">
                         <div className="text-sm text-[#667085]">
                           hobbies / bouldering
                         </div>
@@ -253,12 +253,12 @@ const About = () => {
                     {/* CARD 4 */}
                     <motion.div
                       whileHover={{ scale: 1.05 }}
-                      className="flex flex-col justify-center p-4 rounded-lg break-inside-avoid row-span-3"
+                      className="flex flex-col justify-center p-4 rounded-lg break-inside-avoid row-span-2"
                       style={{ backgroundColor: "#f9f9f9" }}
                     >
                       {/* HOBBY CARDS */}
 
-                      <div className="aspect-square flex flex-col justify-between h-full">
+                      <div className="aspect-square flex flex-col justify-between h-full cursor-nesw-resize">
                         <div className="text-sm text-[#667085]">
                           hobbies / bouldering
                         </div>
@@ -290,7 +290,7 @@ const About = () => {
                     >
                       {/* HOBBY CARDS */}
 
-                      <div className="aspect-square flex flex-col justify-between h-full">
+                      <div className="aspect-square flex flex-col justify-between h-full cursor-nesw-resize">
                         <div className="text-sm text-[#667085]">
                           hobbies / bouldering
                         </div>
@@ -322,7 +322,7 @@ const About = () => {
                     >
                       {/* HOBBY CARDS */}
 
-                      <div className="aspect-square flex flex-col justify-between h-full">
+                      <div className="aspect-square flex flex-col justify-between h-full cursor-nesw-resize">
                         <div className="text-sm text-[#667085]">
                           hobbies / bouldering
                         </div>
