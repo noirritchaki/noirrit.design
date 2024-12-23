@@ -3,6 +3,8 @@ import logo from "../assets/logo.svg";
 import { motion } from "framer-motion";
 import test from "../assets/test.png";
 import { Link } from "react-router-dom";
+import homeme from "../assets/home-me.jpg";
+import aboutme from "../assets/about-me.svg";
 
 const About = () => {
   return (
@@ -16,7 +18,13 @@ const About = () => {
               href="/"
               className="mr-10"
             >
-              <img width="32" height="32" src={logo} alt="logo" />
+              <img
+                width="56"
+                height="56"
+                src={aboutme}
+                alt="logo"
+                className="rounded-[16px] shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-300 ease-in-out"
+              />
             </a>
             <div className="flex flex-row gap-4">
               <a alt="about" aria-label="Go to about" href="/">
@@ -58,12 +66,12 @@ const About = () => {
           >
             <div className="flex flex-row items-top justify-between">
               <div className="flex flex-col gap-8 w-fit">
-                <h1
+                {/* <h1
                   className="inline font-medium"
                   style={{ fontSize: "18px", color: "#182230" }}
                 >
                   about
-                </h1>
+                </h1> */}
                 <div className="flex flex-col pb-2">
                   <h2
                     className="inline font-normal"
@@ -81,57 +89,35 @@ const About = () => {
 
                 <div className="flex flex-col gap-5">
                   <h1
-                    className="inline font-medium leading-normal max-w-[500px]"
+                    className="inline font-regular leading-normal max-w-[500px]"
                     style={{ fontSize: "14px", color: "#667085" }}
                   >
                     {" "}
-                    hello hello! welcome to my
+                    hello hello! i'm
                     <span
                       className="inline font-medium"
                       style={{ color: "#182230" }}
                     >
                       {" "}
-                      digital canvas.{" "}
+                      noirrit,{" "}
                     </span>
-                    creating is what i do best, and right now, I’m crafting
-                    things at Plum HQ.
+                    a product designer at Plum where we make insurance and
+                    healthcare more accessible, easy and inclusive for everyone!
                   </h1>
                   <h1
-                    className="inline font-medium leading-normal max-w-[500px]"
+                    className="inline font-regular leading-normal max-w-[500px]"
                     style={{ fontSize: "14px", color: "#667085" }}
                   >
-                    outside of work, i’m all about brewing{" "}
-                    <span
-                      className="inline font-medium hover:underline trasition duration-300 cursor-pointer"
-                      style={{ color: "#182230" }}
-                    >
-                      {" "}
-                      coffee
-                    </span>
-                    , taking care of my{" "}
-                    <span
-                      className="inline font-medium hover:underline trasition duration-300 cursor-pointer"
-                      style={{ color: "#182230" }}
-                    >
-                      {" "}
-                      plants
-                    </span>
-                    , and{" "}
-                    <span
-                      className="inline font-medium hover:underline trasition duration-300 cursor-pointer"
-                      style={{ color: "#182230" }}
-                    >
-                      {" "}
-                      climbing
-                    </span>{" "}
-                    (plastic) rocks.
+                    i'm also known to randomly try something new. my latest
+                    obsession has been rock climbing.{" "}
                   </h1>
                   <h1
-                    className="inline font-medium leading-normal max-w-[500px]"
+                    className="inline font-regular leading-normal max-w-[500px]"
                     style={{ fontSize: "14px", color: "#667085" }}
                   >
-                    i’ve recently tried my hand at making music. i’m not quite
-                    hitting the high notes yet, but it’s a fun journey!
+                    apart from all this i also spend a lot of time brewing(and
+                    consuming) a lot of coffee, shoot fun videos and learning
+                    how to make some house music!
                   </h1>
                 </div>
                 <div className="flex flex-col gap-10 mt-10">
@@ -174,7 +160,7 @@ const About = () => {
                             className="font-semibold"
                             style={{ fontSize: "32px", color: "#182230" }}
                           >
-                            6a boulder 1
+                            6a boulder
                           </h2>
 
                           {/* SUB-TEXT */}
@@ -196,7 +182,7 @@ const About = () => {
 
                       <div className="aspect-square flex flex-col justify-between h-full cursor-nesw-resize">
                         <div className="text-sm text-[#667085]">
-                          hobbies / bouldering
+                          hobbies / video
                         </div>
 
                         {/* TITLE */}
@@ -206,13 +192,13 @@ const About = () => {
                             className="font-semibold"
                             style={{ fontSize: "32px", color: "#182230" }}
                           >
-                            6a boulder 2
+                            camping
                           </h2>
 
                           {/* SUB-TEXT */}
 
                           <p className="text-sm font-normal text-[#667085]">
-                            a nice warmup 6a climb
+                            a short video of my camping outing
                           </p>
                         </div>
                       </div>

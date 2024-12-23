@@ -9,6 +9,8 @@ import About from "./About";
 import game from "../assets/video-game.svg";
 import album from "../assets/album.svg";
 import book from "../assets/book.svg";
+import pheart from "../assets/plumheart.svg";
+import homeme from "../assets/home-me.jpg";
 
 const Navbar = () => {
   return (
@@ -22,7 +24,13 @@ const Navbar = () => {
               href="/"
               className="mr-10"
             >
-              <img width="32" height="32" src={logo} alt="logo" />
+              <img
+                width="56"
+                height="56"
+                src={homeme}
+                alt="logo"
+                className="rounded-[16px] shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-300 ease-in-out"
+              />
             </a>
             <div className="flex flex-row gap-4">
               <a alt="about" aria-label="Go to about" href="/">
@@ -66,22 +74,25 @@ const Navbar = () => {
               <div className="flex flex-col gap-1 w-fit">
                 <h1
                   className="inline font-medium"
-                  style={{ fontSize: "18px", color: "#182230" }}
+                  style={{ fontSize: "16px", color: "#182230" }}
                 >
                   noirrit chaki
                 </h1>
                 <h2
-                  className="inline font-normal"
-                  style={{ fontSize: "18px", color: "#667085" }}
+                  className="font-normal flex flex-row gap-3 items-center"
+                  style={{ fontSize: "16px", color: "#667085" }}
                 >
                   <span>product designer at </span>
-                  <a
-                    target="_blank"
-                    href="https://www.plumhq.com/"
-                    className="underline decoration-[#D0D5DD]  hover:decoration-[#667085]"
-                  >
-                    PlumHQ
-                  </a>
+                  <div className="flex flex-row gap-2 items-center">
+                    <img className="pheart shadow-lg rounded-lg" src={pheart} />
+                    <a
+                      target="_blank"
+                      href="https://www.plumhq.com/"
+                      className="underline decoration-[#D0D5DD]  hover:decoration-[#667085]"
+                    >
+                      Plum
+                    </a>
+                  </div>
                 </h2>
               </div>
               {/* <div className="flex flex-row gap-4">
@@ -113,7 +124,7 @@ const Navbar = () => {
 
             <div className="flex flex-col gap-5">
               <h1
-                className="inline font-medium leading-normal max-w-[500px]"
+                className="inline font-regular leading-normal max-w-[500px]"
                 style={{ fontSize: "14px", color: "#667085" }}
               >
                 {" "}
@@ -125,11 +136,11 @@ const Navbar = () => {
                   {" "}
                   digital canvas.{" "}
                 </span>
-                creating is what i do best, and right now, I’m crafting things
-                at Plum HQ.
+                creating is what i do best, and right now, i’m crafting
+                experiences at Plum.
               </h1>
               <h1
-                className="inline font-medium leading-normal max-w-[500px]"
+                className="inline font-regular leading-normal max-w-[500px]"
                 style={{ fontSize: "14px", color: "#667085" }}
               >
                 outside of work, i’m all about brewing{" "}
@@ -140,13 +151,13 @@ const Navbar = () => {
                   {" "}
                   coffee
                 </span>
-                , taking care of my{" "}
+                , making a bunch of fun{" "}
                 <span
                   className="inline font-medium hover:underline trasition duration-300 cursor-pointer"
                   style={{ color: "#182230" }}
                 >
                   {" "}
-                  plants
+                  videos
                 </span>
                 , and{" "}
                 <span
@@ -159,7 +170,7 @@ const Navbar = () => {
                 (plastic) rocks.
               </h1>
               <h1
-                className="inline font-medium leading-normal max-w-[500px]"
+                className="inline font-regular leading-normal max-w-[500px]"
                 style={{ fontSize: "14px", color: "#667085" }}
               >
                 i’ve recently tried my hand at making music. i’m not quite
