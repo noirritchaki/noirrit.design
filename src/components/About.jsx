@@ -9,7 +9,7 @@ import aboutme from "../assets/about-me.svg";
 const About = () => {
   return (
     <div className="md:flex md:flex-row md:justify-center">
-      <div className="md:min-w-[512px] md:w-full md:max-w-2xl">
+      <div className="md:min-w-[512px] md:w-full md:max-w-xl">
         <div className="flex flex-col justify-start max-w-2xl px-8 py-36">
           <div className="flex items-center w-full h-8 mb-12 group">
             <a
@@ -139,21 +139,23 @@ const About = () => {
 
                   {/* HOBBIES */}
 
-                  <div className="grid grid-cols-1 grid-rows-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-2">
-                    {/* CARD 1 */}
+                  {/* <div className="grid grid-cols-1 grid-rows-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-2">
+
+                    CARD 1: 
                     <motion.div
                       whileHover={{ scale: 1.05 }}
                       className="flex flex-col justify-center p-4 rounded-lg break-inside-avoid row-span-1"
                       style={{ backgroundColor: "#f9f9f9" }}
                     >
-                      {/* HOBBY CARDS */}
+
+                      HOBBY CARDS: 
 
                       <div className="aspect-square flex flex-col justify-between h-full cursor-nesw-resize">
                         <div className="text-sm text-[#667085]">
                           hobbies / bouldering
                         </div>
 
-                        {/* TITLE */}
+                        TITLE 
 
                         <div className="flex flex-col gap-1">
                           <h2
@@ -163,7 +165,7 @@ const About = () => {
                             6a boulder
                           </h2>
 
-                          {/* SUB-TEXT */}
+                          SUB-TEXT 
 
                           <p className="text-sm font-normal text-[#667085]">
                             a nice warmup 6a climb
@@ -172,20 +174,22 @@ const About = () => {
                       </div>
                     </motion.div>
 
-                    {/* CARD 2 */}
+                    CARD 2:
+
                     <motion.div
                       whileHover={{ scale: 1.05 }}
                       className="flex flex-col justify-center p-4 rounded-lg break-inside-avoid row-span-2"
                       style={{ backgroundColor: "#f9f9f9" }}
                     >
-                      {/* HOBBY CARDS */}
+
+                      HOBBY CARDS:
 
                       <div className="aspect-square flex flex-col justify-between h-full cursor-nesw-resize">
                         <div className="text-sm text-[#667085]">
                           hobbies / video
                         </div>
 
-                        {/* TITLE */}
+                        TITLE 
 
                         <div className="flex flex-col gap-1">
                           <h2
@@ -195,7 +199,7 @@ const About = () => {
                             camping
                           </h2>
 
-                          {/* SUB-TEXT */}
+                          SUB-TEXT 
 
                           <p className="text-sm font-normal text-[#667085]">
                             a short video of my camping outing
@@ -204,20 +208,22 @@ const About = () => {
                       </div>
                     </motion.div>
 
-                    {/* CARD 3 */}
+                    CARD 3:
+
                     <motion.div
                       whileHover={{ scale: 1.05 }}
                       className="flex flex-col justify-center p-4 rounded-lg break-inside-avoid row-span-1"
                       style={{ backgroundColor: "#f9f9f9" }}
                     >
-                      {/* HOBBY CARDS */}
+
+                      HOBBY CARDS:
 
                       <div className="aspect-square flex flex-col justify-between h-full cursor-nesw-resize">
                         <div className="text-sm text-[#667085]">
                           hobbies / bouldering
                         </div>
 
-                        {/* TITLE */}
+                        TITLE 
 
                         <div className="flex flex-col gap-1">
                           <h2
@@ -227,7 +233,7 @@ const About = () => {
                             6a boulder 3
                           </h2>
 
-                          {/* SUB-TEXT */}
+                          SUB-TEXT 
 
                           <p className="text-sm font-normal text-[#667085]">
                             a nice warmup 6a climb
@@ -236,20 +242,21 @@ const About = () => {
                       </div>
                     </motion.div>
 
-                    {/* CARD 4 */}
+                    CARD 4:
+
                     <motion.div
                       whileHover={{ scale: 1.05 }}
                       className="flex flex-col justify-center p-4 rounded-lg break-inside-avoid row-span-2"
                       style={{ backgroundColor: "#f9f9f9" }}
                     >
-                      {/* HOBBY CARDS */}
+                      HOBBY CARDS:
 
                       <div className="aspect-square flex flex-col justify-between h-full cursor-nesw-resize">
                         <div className="text-sm text-[#667085]">
                           hobbies / bouldering
                         </div>
 
-                        {/* TITLE */}
+                        TITLE 
 
                         <div className="flex flex-col gap-1">
                           <h2
@@ -259,7 +266,7 @@ const About = () => {
                             6a boulder 4
                           </h2>
 
-                          {/* SUB-TEXT */}
+                          SUB-TEXT 
 
                           <p className="text-sm font-normal text-[#667085]">
                             a nice warmup 6a climb
@@ -268,20 +275,22 @@ const About = () => {
                       </div>
                     </motion.div>
 
-                    {/* CARD 5 */}
+                    CARD 5:
+
                     <motion.div
                       whileHover={{ scale: 1.05 }}
                       className="flex flex-col justify-center p-4 rounded-lg break-inside-avoid row-span-2"
                       style={{ backgroundColor: "#f9f9f9" }}
                     >
-                      {/* HOBBY CARDS */}
+
+                      HOBBY CARDS: 
 
                       <div className="aspect-square flex flex-col justify-between h-full cursor-nesw-resize">
                         <div className="text-sm text-[#667085]">
                           hobbies / bouldering
                         </div>
 
-                        {/* TITLE */}
+                        TITLE 
 
                         <div className="flex flex-col gap-1">
                           <h2
@@ -291,7 +300,7 @@ const About = () => {
                             6a boulder 5
                           </h2>
 
-                          {/* SUB-TEXT */}
+                          SUB-TEXT 
 
                           <p className="text-sm font-normal text-[#667085]">
                             a nice warmup 6a climb
@@ -300,20 +309,22 @@ const About = () => {
                       </div>
                     </motion.div>
 
-                    {/* CARD 6 */}
+                    CARD 6:
+
                     <motion.div
                       whileHover={{ scale: 1.05 }}
                       className="flex flex-col justify-center p-4 rounded-lg break-inside-avoid row-span-1"
                       style={{ backgroundColor: "#f9f9f9" }}
                     >
-                      {/* HOBBY CARDS */}
+                      
+                      HOBBY CARDS 
 
                       <div className="aspect-square flex flex-col justify-between h-full cursor-nesw-resize">
                         <div className="text-sm text-[#667085]">
                           hobbies / bouldering
                         </div>
 
-                        {/* TITLE */}
+                        TITLE 
 
                         <div className="flex flex-col gap-1">
                           <h2
@@ -323,7 +334,7 @@ const About = () => {
                             6a boulder 6
                           </h2>
 
-                          {/* SUB-TEXT */}
+                          SUB-TEXT 
 
                           <p className="text-sm font-normal text-[#667085]">
                             a nice warmup 6a climb
@@ -331,7 +342,7 @@ const About = () => {
                         </div>
                       </div>
                     </motion.div>
-                  </div>
+                  </div>  */}
                 </div>
               </div>
             </div>

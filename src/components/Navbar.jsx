@@ -11,11 +11,12 @@ import album from "../assets/album.svg";
 import book from "../assets/book.svg";
 import pheart from "../assets/plumheart.svg";
 import homeme from "../assets/home-me.jpg";
+import redplum from "../assets/red-plum.svg";
 
 const Navbar = () => {
   return (
     <div className="md:flex md:flex-row md:justify-center">
-      <div className="md:min-w-[512px] md:w-full md:max-w-2xl">
+      <div className="md:min-w-[512px] md:w-full md:max-w-xl">
         <div className="flex flex-col justify-start max-w-2xl px-8 py-36">
           <div className="flex items-center w-full h-8 mb-12 group">
             <a
@@ -71,7 +72,7 @@ const Navbar = () => {
             transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
           >
             <div className="flex flex-row items-top justify-between">
-              <div className="flex flex-col gap-1 w-fit">
+              <div className="flex flex-col gap-0 w-fit">
                 <h1
                   className="inline font-medium"
                   style={{ fontSize: "16px", color: "#182230" }}
@@ -79,16 +80,16 @@ const Navbar = () => {
                   noirrit chaki
                 </h1>
                 <h2
-                  className="font-normal flex flex-row gap-3 items-center"
+                  className="font-normal flex flex-row gap-2 items-center"
                   style={{ fontSize: "16px", color: "#667085" }}
                 >
                   <span>product designer at </span>
-                  <div className="flex flex-row gap-2 items-center">
-                    <img className="pheart shadow-lg rounded-lg" src={pheart} />
+                  <div className="flex flex-row gap-2 items-center shadow-inner pl-1 pr-2 py-1 rounded-[8px]">
+                    <img className="pheart w-6 h-6" src={redplum} />
                     <a
                       target="_blank"
                       href="https://www.plumhq.com/"
-                      className="underline decoration-[#D0D5DD]  hover:decoration-[#667085]"
+                      className=""
                     >
                       Plum
                     </a>
@@ -180,13 +181,13 @@ const Navbar = () => {
 
             {/* separator  */}
 
-            <div className="w-full border-t border-dashed border-[#D0D5DD] h-0 mt-1 mb-1"></div>
+            {/* <div className="w-full border-t border-dashed border-[#D0D5DD] h-0 mt-1 mb-1"></div> */}
 
             {/* work section */}
 
             <div className="z-10 flex flex-col gap-2 w-fit shrink-0">
               <h2
-                className="inline font-normal mb-[16px]"
+                className="inline font-medium mb-[16px]"
                 style={{ fontSize: "14px", color: "#667085" }}
               >
                 work
