@@ -5,8 +5,11 @@ import test from "../assets/test.png";
 import { Link } from "react-router-dom";
 import homeme from "../assets/home-me.jpg";
 import aboutme from "../assets/about-me.svg";
+import Hobbies from "./Hobbies";
+import Pink from "../assets/pink.png";
 
 const About = () => {
+  const hobbies = [{ image: Pink, title: "Flag Out" }];
   return (
     <div className="md:flex md:flex-row md:justify-center">
       <div className="md:min-w-[512px] md:w-full md:max-w-xl">
@@ -130,7 +133,7 @@ const About = () => {
                     </h1>
                     <h2
                       className="inline font-normal max-w-[500px]"
-                      style={{ fontSize: "14px", color: "#98A2B3" }}
+                      style={{ fontSize: "14px", color: "#667085" }}
                     >
                       i've got quite a few hobbies but honestly that's the best
                       part. trying out new things is always super fun
@@ -138,6 +141,16 @@ const About = () => {
                   </div>
 
                   {/* HOBBIES */}
+
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+                    {hobbies.map((hobby, index) => (
+                      <Hobbies
+                        key={index}
+                        image={hobby.image}
+                        title={hobby.title}
+                      />
+                    ))}
+                  </div>
 
                   {/* <div className="grid grid-cols-1 grid-rows-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-2">
 
