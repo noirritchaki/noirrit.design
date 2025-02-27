@@ -7,9 +7,12 @@ import homeme from "../assets/home-me.jpg";
 import aboutme from "../assets/about-me.svg";
 import Hobbies from "./Hobbies";
 import Pink from "../assets/pink.png";
+import Sketch from "../assets/sketchy.png";
+import Slab from "../assets/slab.png";
+import { image, title } from "framer-motion/client";
 
 const About = () => {
-  const hobbies = [{ image: Pink, title: "Flag Out" }];
+  const hobbies = [{ image: Pink, title: "Flag Out" }, {image: Sketch, title: "Sketchy Top"}, {image: Slab, title: "Everyone Loves Slab"}];
   return (
     <div className="md:flex md:flex-row md:justify-center">
       <div className="md:min-w-[512px] md:w-full md:max-w-xl">
@@ -77,7 +80,7 @@ const About = () => {
                 </h1> */}
                 <div className="flex flex-col pb-2">
                   <h2
-                    className="inline font-normal"
+                    className="inline font-medium"
                     style={{ fontSize: "20px" }}
                   >
                     noirrit chaki
@@ -93,7 +96,7 @@ const About = () => {
                 <div className="flex flex-col gap-5">
                   <h1
                     className="inline font-regular leading-normal max-w-[500px]"
-                    style={{ fontSize: "14px", color: "#667085" }}
+                    style={{ fontSize: "16px", color: "#667085" }}
                   >
                     {" "}
                     hello hello! i'm
@@ -109,21 +112,21 @@ const About = () => {
                   </h1>
                   <h1
                     className="inline font-regular leading-normal max-w-[500px]"
-                    style={{ fontSize: "14px", color: "#667085" }}
+                    style={{ fontSize: "16px", color: "#667085" }}
                   >
                     i'm also known to randomly try something new. my latest
                     obsession has been rock climbing.{" "}
                   </h1>
                   <h1
                     className="inline font-regular leading-normal max-w-[500px]"
-                    style={{ fontSize: "14px", color: "#667085" }}
+                    style={{ fontSize: "16px", color: "#667085" }}
                   >
                     apart from all this i also spend a lot of time brewing(and
                     consuming) a lot of coffee, shoot fun videos and learning
                     how to make some house music!
                   </h1>
                 </div>
-                <div className="flex flex-col gap-10 mt-10">
+                <div className="flex flex-col gap-6 mt-10">
                   <div className="flex flex-col gap-1">
                     <h1
                       className="inline font-medium"
@@ -131,13 +134,13 @@ const About = () => {
                     >
                       hobbies
                     </h1>
-                    <h2
+                    {/* <h2
                       className="inline font-normal max-w-[500px]"
-                      style={{ fontSize: "14px", color: "#667085" }}
+                      style={{ fontSize: "16px", color: "#667085" }}
                     >
                       i've got quite a few hobbies but honestly that's the best
                       part. trying out new things is always super fun
-                    </h2>
+                    </h2> */}
                   </div>
 
                   {/* HOBBIES */}
@@ -151,6 +154,7 @@ const About = () => {
                       />
                     ))}
                   </div>
+                  
 
                   {/* <div className="grid grid-cols-1 grid-rows-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-2">
 
