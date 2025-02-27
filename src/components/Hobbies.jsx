@@ -47,7 +47,7 @@ const Hobbies = ({ image, title, videoUrl }) => {
           <video 
               autoPlay
               className="h-[600px] w-auto max-w-[90%] rounded-md">
-                <source src="/videos/FlagOut.MP4" type="video/mp4" />
+                <source src={videoUrl} type="video/mp4" />
           </video>
         </motion.div>
       </motion.div>

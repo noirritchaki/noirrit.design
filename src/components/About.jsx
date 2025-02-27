@@ -12,7 +12,7 @@ import Slab from "../assets/slab.png";
 import { image, title } from "framer-motion/client";
 
 const About = () => {
-  const hobbies = [{ image: Pink, title: "Flag Out" }, {image: Sketch, title: "Sketchy Top"}, {image: Slab, title: "Everyone Loves Slab"}];
+  const hobbies = [{ image: Pink, title: "Flag Out", videoUrl: "/videos/FlagOut.MP4" }, {image: Sketch, title: "Sketchy Top", videoUrl: "/videos/sketchy-top.MP4"}, {image: Slab, title: "Everyone Loves Slab", videoUrl: "/videos/slab-lol.MOV"}];
   return (
     <div className="md:flex md:flex-row md:justify-center">
       <div className="md:min-w-[512px] md:w-full md:max-w-xl">
@@ -151,6 +151,7 @@ const About = () => {
                         key={index}
                         image={hobby.image}
                         title={hobby.title}
+                        videoUrl={hobby.videoUrl}
                       />
                     ))}
                   </div>
