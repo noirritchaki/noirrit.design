@@ -162,13 +162,14 @@ const Navbar = () => {
                   haiku {""}
                 </span>
                 or just {" "}
-                <span
+                <Link
+                  to="/connect"
                   className="inline font-medium hover:underline trasition duration-300 cursor-pointer"
                   style={{ color: "#182230" }}
                 >
                   {" "}
                   get in touch.
-                </span>{" "}
+                </Link>{" "}
                 {/* (plastic) rocks. */}
               </h1>
               {/* <h1
