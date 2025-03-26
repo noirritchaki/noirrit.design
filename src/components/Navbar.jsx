@@ -144,7 +144,7 @@ const Navbar = () => {
                 className="inline font-regular leading-normal max-w-[500px]"
                 style={{ fontSize: "16px", color: "#667085" }}
               >
-               take a look at some of my {" "}
+                take a look at some of my{" "}
                 <Link
                   to="/about"
                   className="inline font-medium hover:underline trasition duration-300 cursor-pointer"
@@ -153,15 +153,16 @@ const Navbar = () => {
                   {" "}
                   hobbies
                 </Link>
-                , read a {" "}
-                <span
+                , read a{" "}
+                <Link
+                  to="/haiku"
                   className="inline font-medium hover:underline trasition duration-300 cursor-pointer"
                   style={{ color: "#182230" }}
                 >
                   {" "}
                   haiku {""}
-                </span>
-                or just {" "}
+                </Link>
+                or just{" "}
                 <Link
                   to="/connect"
                   className="inline font-medium hover:underline trasition duration-300 cursor-pointer"
@@ -197,11 +198,7 @@ const Navbar = () => {
 
               {/* start of the work list */}
 
-              <WorkLink
-                showcase={test}
-                title="health checkup"
-                year={2024}
-              />
+              <WorkLink showcase={test} title="health checkup" year={2024} />
 
               <WorkLink
                 showcase={test}
@@ -282,46 +279,46 @@ const Navbar = () => {
             </div> */}
 
             <div className="flex flex-col">
-            <h2
+              <h2
                 className="inline font-medium mb-[16px]"
                 style={{ fontSize: "16px", color: "#404040" }}
               >
                 connect
               </h2>
               <div className="flex flex-row gap-2 py-3">
-                  <div className="flex flex-col gap-3">
-                    <h2
-                      className="inline font-normal hover:underline trasition duration-300 cursor-pointer"
-                      style={{ fontSize: "16px", color: "#182230" }}
-                    >
-                      email
-                    </h2>
-                    <h2
-                      className="inline font-normal hover:underline trasition duration-300 cursor-pointer"
-                      style={{ fontSize: "16px", color: "#182230" }}
-                    >
-                      linkedin
-                    </h2>
-                    <h2
-                      className="inline font-normal hover:underline trasition duration-300 cursor-pointer"
-                      style={{ fontSize: "16px", color: "#182230" }}
-                    >
-                      twitter
-                    </h2>
-                    <h2
-                      className="inline font-normal hover:underline trasition duration-300 cursor-pointer"
-                      style={{ fontSize: "16px", color: "#182230" }}
-                    >
-                      github
-                    </h2>
-                    <h2
-                      className="inline font-normal hover:underline trasition duration-300 cursor-pointer"
-                      style={{ fontSize: "16px", color: "#182230" }}
-                    >
-                      instagram
-                    </h2>
-                  </div>
+                <div className="flex flex-col gap-3">
+                  <h2
+                    className="inline font-normal hover:underline trasition duration-300 cursor-pointer"
+                    style={{ fontSize: "16px", color: "#182230" }}
+                  >
+                    email
+                  </h2>
+                  <h2
+                    className="inline font-normal hover:underline trasition duration-300 cursor-pointer"
+                    style={{ fontSize: "16px", color: "#182230" }}
+                  >
+                    linkedin
+                  </h2>
+                  <h2
+                    className="inline font-normal hover:underline trasition duration-300 cursor-pointer"
+                    style={{ fontSize: "16px", color: "#182230" }}
+                  >
+                    twitter
+                  </h2>
+                  <h2
+                    className="inline font-normal hover:underline trasition duration-300 cursor-pointer"
+                    style={{ fontSize: "16px", color: "#182230" }}
+                  >
+                    github
+                  </h2>
+                  <h2
+                    className="inline font-normal hover:underline trasition duration-300 cursor-pointer"
+                    style={{ fontSize: "16px", color: "#182230" }}
+                  >
+                    instagram
+                  </h2>
                 </div>
+              </div>
             </div>
           </motion.div>
         </div>

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Connect from "./components/Connect";
+import HaikuPage from "./components/HaikuPage";
 
 const Home = () => (
   <div>
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/connect" element={<Connect />} />
+        <Route path="/haiku" element={<HaikuPage />} />
       </Routes>
     </Router>
   );
