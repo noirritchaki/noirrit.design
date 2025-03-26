@@ -41,7 +41,7 @@ const About = () => {
                 height="56"
                 src={aboutme}
                 alt="logo"
-                className="rounded-[16px] shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-300 ease-in-out"
+                className="rounded-[16px] shadow-lg hover:shadow-xl hover:scale-105 hover:rotate-3 transition-transform duration-300 ease-in-out"
               />
             </a>
             <div className="flex flex-row gap-4">

@@ -30,7 +30,7 @@ const Navbar = () => {
                 height="56"
                 src={homeme}
                 alt="logo"
-                className="rounded-[16px] shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-300 ease-in-out"
+                className="rounded-[16px] shadow-lg hover:shadow-xl hover:scale-105 hover:rotate-3 transition-transform duration-300 ease-in-out"
               />
             </a>
             <div className="flex flex-row gap-4">
@@ -190,7 +190,7 @@ const Navbar = () => {
 
             <div className="z-10 flex flex-col gap-2 w-fit shrink-0">
               <h2
-                className="inline font-medium mb-[16px]"
+                className="inline font-medium mb-[16px] bg-[#dcfce7] px-1 w-fit"
                 style={{ fontSize: "16px", color: "#404040" }}
               >
                 work
