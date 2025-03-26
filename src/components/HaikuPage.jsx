@@ -82,7 +82,14 @@ const HaikuPage = () => {
               </a>
             </div>
           </div>
-          <p className="text-gray-700 whitespace-pre-line italic">{haiku}</p>
+          <motion.div
+            className="flex flex-col gap-16 origin-left"
+            initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
+            animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+            transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
+          >
+            <p className="text-gray-700 whitespace-pre-line italic">{haiku}</p>
+          </motion.div>
         </div>
       </div>
     </div>
