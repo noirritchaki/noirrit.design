@@ -1,0 +1,10 @@
+.parent {
+}
+
+.parent:hover + .child {
+  opacity: 1;
+}
+
+.parent + .child {
+  opacity: 0;
+}
