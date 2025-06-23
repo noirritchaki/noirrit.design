@@ -16,6 +16,7 @@ import Zomaland from "../assets/zomaland.png";
 import Yellow from "../assets/yellow-dyno.png";
 import EasyPeasy from "../assets/easy-peasy.png";
 import Depression from "../assets/depression.png";
+import Green from "../assets/greengoblin.png";
 
 const About = () => {
   const hobbies = [
@@ -59,6 +60,11 @@ const About = () => {
       image: Depression,
       title: "Depression",
       videoUrl: "/videos/depression.MOV",
+    },
+    {
+      image: Green,
+      title: "Green Goblin",
+      videoUrl: "/videos/greengoblin.MOV",
     },
   ];
   return (
