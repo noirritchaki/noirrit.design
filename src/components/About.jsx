@@ -17,6 +17,10 @@ import Yellow from "../assets/yellow-dyno.png";
 import EasyPeasy from "../assets/easy-peasy.png";
 import Depression from "../assets/depression.png";
 import Green from "../assets/greengoblin.png";
+import White from "../assets/whiteparade.png";
+import Orange from "../assets/underorange.png";
+import DontCall from "../assets/dontcallme.png";
+import Big5 from "../assets/big5.png";
 
 const About = () => {
   const hobbies = [
@@ -27,21 +31,35 @@ const About = () => {
       videoUrl: "/videos/FlagOut.MP4",
     },
     {
+      image: Orange,
+      title: "Under Orange",
+      videoUrl: "/videos/underorange.MOV",
+    },
+    {
+      image: DontCall,
+      title: "Don't Call Me",
+      videoUrl: "/videos/dontcallme.mp4",
+    },
+    {
       image: Sketch,
       title: "Sketchy Top",
       subtitle: "Bouldering",
       videoUrl: "/videos/sketchy-top.MP4",
     },
     {
-      image: Slab,
-      title: "Everyone Loves Slab",
-      videoUrl: "/videos/slab-lol.MOV",
+      image: Big5,
+      title: "The Big 5",
+      videoUrl: "/videos/bigs5.MP4",
     },
     {
       image: Wait,
       title: "Wait",
-      videoUrl:
-        "https://drive.google.com/file/d/176p_cTC83uyx4wT5G1TKWd_NJ30xkw6m/view?usp=drive_link",
+      videoUrl: "/videos",
+    },
+    {
+      image: Slab,
+      title: "Everyone Loves Slab",
+      videoUrl: "/videos/slab-lol.MOV",
     },
     {
       image: PostIt,
@@ -65,6 +83,11 @@ const About = () => {
       image: Green,
       title: "Green Goblin",
       videoUrl: "/videos/greengoblin.MOV",
+    },
+    {
+      image: White,
+      title: "White Parade",
+      videoUrl: "/videos/white-parade.MP4",
     },
   ];
   return (
