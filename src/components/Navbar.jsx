@@ -199,13 +199,15 @@ const Navbar = () => {
 
               {/* start of the work list */}
               <Link to="/healthCheckup">
-                <WorkLink showcase={test} title="health checkup" year={2024} />
+                <WorkLink showcase={test} title="health checkup" year={2025} />
               </Link>
-              <WorkLink
-                showcase={test}
-                title="seamless end-to-end health checkup experience"
-                year={2024}
-              />
+              <Link to="/plumWallet">
+                <WorkLink
+                  showcase={test}
+                  title="plum health wallet"
+                  year={2024}
+                />
+              </Link>
               {/* <WorkLink
                 showcase={test}
                 title="plum health wallet"

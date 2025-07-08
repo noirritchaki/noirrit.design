@@ -5,6 +5,7 @@ import About from "./components/About";
 import Connect from "./components/Connect";
 import HaikuPage from "./components/HaikuPage";
 import HealthCheckup from "./components/healthCheckup";
+import PlumWallet from "./components/plumWallet";
 
 const Home = () => (
   <div>
@@ -23,6 +24,7 @@ const App = () => {
         <Route path="/connect" element={<Connect />} />
         <Route path="/haiku" element={<HaikuPage />} />
         <Route path="/healthcheckup" element={<HealthCheckup />} />
+        <Route path="/plumwallet" element={<PlumWallet />} />
       </Routes>
     </Router>
   );
