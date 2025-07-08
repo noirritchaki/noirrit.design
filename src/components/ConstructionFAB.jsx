@@ -3,7 +3,13 @@ import { motion } from "framer-motion";
 const ConstructionFAB = () => {
   return (
     <motion.div
-      className="fixed bottom-6 right-6 z-50"
+      whileHover={{ scale: 1.05 }}
+      whileTap={{
+        x: [0, -4, 4, -3, 3, -2, 2, 0],
+        y: [0, -2, 2, -1, 1, -1, 1, 0],
+        transition: { duration: 0.4 },
+      }}
+      className="cursor-pointer fixed bottom-6 right-6 z-50"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
