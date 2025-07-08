@@ -12,6 +12,7 @@ import book from "../assets/book.svg";
 import pheart from "../assets/plumheart.svg";
 import homeme from "../assets/home-me.jpg";
 import redplum from "../assets/red-plum.svg";
+import ConstructionFAB from "./ConstructionFAB";
 
 const Navbar = () => {
   return (
@@ -323,6 +324,7 @@ const Navbar = () => {
           </motion.div>
         </div>
       </div>
+      <ConstructionFAB />
     </div>
   );
 };
