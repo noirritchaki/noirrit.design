@@ -21,6 +21,7 @@ import White from "../assets/whiteparade.png";
 import Orange from "../assets/underorange.png";
 import DontCall from "../assets/dontcallme.png";
 import Big5 from "../assets/big5.png";
+import BlueO from "../assets/blue-o.png";
 
 const About = () => {
   const hobbies = [
@@ -55,6 +56,11 @@ const About = () => {
       image: Wait,
       title: "Wait",
       videoUrl: "/videos",
+    },
+    {
+      image: BlueO,
+      title: "Blue-O",
+      videoUrl: "/videos/blue.o.MP4",
     },
     {
       image: Slab,
