@@ -6,6 +6,7 @@ import Connect from "./components/Connect";
 import HaikuPage from "./components/HaikuPage";
 import HealthCheckup from "./components/healthCheckup";
 import PlumWallet from "./components/plumWallet";
+import SparkleEffect from "./components/SparkleEffect";
 
 const Home = () => (
   <div>
@@ -18,6 +19,7 @@ const Home = () => (
 const App = () => {
   return (
     <Router>
+      {/* <SparkleEffect /> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
