@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import Lottie from "lottie-react";
+import PulseAnimation from "../assets/pulse.json";
 
 const ConstructionFAB = () => {
   return (
@@ -14,12 +16,18 @@ const ConstructionFAB = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
     >
-      <div className="px-4 py-2 bg-white text-[#182230] rounded-full shadow-lg text-[14px] flex flex-col items-center text-center">
-        <p className="text-[14px] font-medium">This portfolio is still a WIP</p>
-        <p className="text-[12px] font-regular text-[#182230]">
-          {" "}
-          Coding it takes some time :){" "}
-        </p>
+      <div className="flex items-center gap-1 px-2 py-2 bg-white text-[#0cda9f] rounded-full shadow-lg text-[14px]">
+        <div className="w-6 h-6">
+          <Lottie animationData={PulseAnimation} loop autoplay />
+        </div>
+        <div className="flex flex-col text-left">
+          <p className="text-[12px] font-regular">
+            i've been coding this site. so it's still a WIP :)
+          </p>
+          {/* <p className="text-[12px] font-regular text-[#182230]">
+            Coding it takes some time :)
+          </p> */}
+        </div>
       </div>
     </motion.div>
   );
