@@ -13,6 +13,7 @@ import pheart from "../assets/plumheart.svg";
 import homeme from "../assets/home-me.jpg";
 import redplum from "../assets/red-plum.svg";
 import ConstructionFAB from "./ConstructionFAB";
+import { LinkPreview } from "./LinkPreview";
 
 const Navbar = () => {
   return (
@@ -85,16 +86,17 @@ const Navbar = () => {
                   style={{ fontSize: "16px", color: "#667085" }}
                 >
                   <span>product designer at </span>
-                  <div className="flex flex-row gap-2 items-center shadow-inner pl-1 pr-2 py-1 rounded-[8px]">
-                    <img className="pheart w-6 h-6" src={redplum} />
-                    <a
+                  <LinkPreview url={"https://www.plumhq.com/"} isExternal>
+                    <div className="flex flex-row gap-2 items-center shadow-inner pl-1 pr-2 py-1 rounded-[8px]">
+                      <img className="pheart w-6 h-6" src={redplum} />
+                      {/* <a
                       target="_blank"
                       href="https://www.plumhq.com/"
                       className=""
-                    >
-                      Plum
-                    </a>
-                  </div>
+                    > */}
+                      <span className="text-black">Plum</span>
+                    </div>
+                  </LinkPreview>
                 </h2>
               </div>
               {/* <div className="flex flex-row gap-4">
@@ -146,14 +148,13 @@ const Navbar = () => {
                 style={{ fontSize: "16px", color: "#667085" }}
               >
                 take a look at some of my{" "}
-                <Link
-                  to="/about"
-                  className="inline font-medium hover:underline trasition duration-300 cursor-pointer"
-                  style={{ color: "#182230" }}
+                <LinkPreview
+                  className="inline font-medium hover:underline trasition duration-300 cursor-pointer !text-[#182230]"
+                  url={"/about"}
                 >
                   {" "}
                   hobbies
-                </Link>
+                </LinkPreview>
                 , read a{" "}
                 <Link
                   to="/haiku"
