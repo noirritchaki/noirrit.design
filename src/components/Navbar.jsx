@@ -39,7 +39,7 @@ const Navbar = () => {
               <a alt="about" aria-label="Go to about" href="/">
                 <Link
                   to="/about"
-                  className="inline font-normal underline-offset-2 hover:underline decoration-[#D0D5DD]"
+                  className="inline font-normal underline-offset-2 hover:underline decoration-[#182230]"
                   style={{ fontSize: "14px", color: "#667085" }}
                 >
                   about
@@ -48,7 +48,7 @@ const Navbar = () => {
               <a alt="connect" aria-label="Go to connect" href="/">
                 <Link
                   to="/connect"
-                  className="inline font-normal underline-offset-2 hover:underline decoration-[#D0D5DD]"
+                  className="inline font-normal underline-offset-2 hover:underline decoration-[#182230]"
                   style={{ fontSize: "14px", color: "#667085" }}
                 >
                   connect
@@ -59,7 +59,7 @@ const Navbar = () => {
                   to="https://read.cv/noirrit"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline font-normal underline-offset-2 hover:underline decoration-[#D0D5DD]"
+                  className="inline font-normal underline-offset-2 hover:underline decoration-[#182230]"
                   style={{ fontSize: "14px", color: "#667085" }}
                 >
                   resume
@@ -126,7 +126,7 @@ const Navbar = () => {
               />
             </div> */}
 
-            <div className="flex flex-col gap-5">
+            <div className="flex flex-col gap-6">
               <h1
                 className="inline font-regular leading-normal max-w-[500px]"
                 style={{ fontSize: "16px", color: "#667085" }}
@@ -153,35 +153,50 @@ const Navbar = () => {
                   url={"/about"}
                 >
                   {" "}
-                  hobbies
+                  hobbies,
                 </LinkPreview>
-                , read a{" "}
-                <Link
-                  to="/haiku"
-                  className="inline font-medium hover:underline trasition duration-300 cursor-pointer"
-                  style={{ color: "#182230" }}
+                <LinkPreview
+                  className="inline font-medium hover:underline trasition duration-300 cursor-pointer !text-[#182230]"
+                  url={"/haiku"}
                 >
                   {" "}
                   haiku {""}
-                </Link>
+                </LinkPreview>
                 or just{" "}
-                <Link
-                  to="/connect"
-                  className="inline font-medium hover:underline trasition duration-300 cursor-pointer"
-                  style={{ color: "#182230" }}
+                <LinkPreview
+                  className="inline font-medium hover:underline trasition duration-300 cursor-pointer !text-[#182230]"
+                  url={"/connect"}
                 >
                   {" "}
                   get in touch.
-                </Link>{" "}
+                </LinkPreview>{" "}
                 {/* (plastic) rocks. */}
               </h1>
-              {/* <h1
+              <h1
                 className="inline font-regular leading-normal max-w-[500px]"
-                style={{ fontSize: "14px", color: "#667085" }}
+                style={{ fontSize: "16px", color: "#667085" }}
               >
-                i’ve recently tried my hand at making music. i’m not quite
-                hitting the high notes yet, but it’s a fun journey!
-              </h1> */}
+                when i'm not in front of my laptop you'll either find me in the{" "}
+                <LinkPreview
+                  className="inline font-medium hover:underline trasition duration-300 cursor-pointer !text-[#182230]"
+                  url={"/haiku"}
+                >
+                  gym,{" "}
+                </LinkPreview>
+                <LinkPreview
+                  className="inline font-medium hover:underline trasition duration-300 cursor-pointer !text-[#182230]"
+                  url={"/haiku"}
+                >
+                  climbing station
+                </LinkPreview>{" "}
+                or stuck in{" "}
+                <LinkPreview
+                  className="inline font-medium hover:underline trasition duration-300 cursor-pointer !text-[#182230]"
+                  url={"/haiku"}
+                >
+                  bangalore traffic.
+                </LinkPreview>
+              </h1>
             </div>
 
             {/* separator  */}

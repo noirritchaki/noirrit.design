@@ -90,8 +90,8 @@ const plumWallet = () => {
                     lineHeight: "21px",
                   }}
                 >
-                  Designing a User Experience Journey To Facilitate Usage of
-                  Plum Health Wallet
+                  Designing a User Experience Journey To File a Reimbursement
+                  Claim Through Plum's Health Wallet
                 </h2>
                 <div className="w-[32px] border-t border-[#D0D5DD] h-3 mt-3"></div>
                 <h2
@@ -101,7 +101,7 @@ const plumWallet = () => {
                   2024 / Plum
                 </h2>
                 <div className="pointer-events-none select-none">
-                  <div className="flex flex row justify-center rounded md:-mx-6 mt-8">
+                  <div className="flex flex-row justify-center rounded md:-mx-6 mt-8">
                     <img src={walletimg} alt="main image" />
                   </div>
                 </div>
