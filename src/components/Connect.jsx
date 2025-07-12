@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import aboutme from "../assets/about-me.svg";
 import connectme from "../assets/connect-me.JPG";
+import arrowBack from "../assets/arrow.svg";
 
 const Connect = () => {
   return (
@@ -11,6 +12,24 @@ const Connect = () => {
         <div className="flex flex-col justify-start max-w-2xl px-8 py-36">
           {/* Navigation */}
           <div className="flex items-center w-full h-8 mb-12 group">
+            <div className="relative">
+              <motion.div
+                initial={{ opacity: 0, y: -6, filter: "blur(4px)" }}
+                animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+                transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
+                className="absolute -top-16 -left-[42px] flex flex-col items-center gap-1"
+              >
+                <Link
+                  to="/"
+                  className="flex flex-col items-center gap-1 text-[#667085] text-sm hover:text-[#182230] transition-colors"
+                >
+                  <span className="whitespace-nowrap text-center font-caveat text-[16px] tracking-tighter">
+                    go back
+                  </span>
+                  <img src={arrowBack} alt="go back" className="w-8 h-8" />
+                </Link>
+              </motion.div>
+            </div>
             <a href="/" className="mr-10">
               <img
                 width="56"

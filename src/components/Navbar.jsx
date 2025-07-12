@@ -22,17 +22,19 @@ const Navbar = () => {
       <div className="md:min-w-[512px] md:w-full md:max-w-xl">
         <div className="flex flex-col justify-start max-w-2xl px-8 py-36">
           <div className="flex items-center w-full h-8 mb-12 group">
-            <div className="relative">
+            {/* <div className="relative">
               <div className="absolute -top-16 -left-[42px] flex flex-col items-center gap-1">
                 <Link
                   to="/"
                   className="flex flex-col items-center gap-1 text-[#667085] text-sm hover:text-[#182230] transition-colors"
                 >
-                  <span className="whitespace-nowrap text-center">go back</span>
+                  <span className="whitespace-nowrap text-center font-caveat text-[16px] tracking-tighter">
+                    go back
+                  </span>
                   <img src={arrowBack} alt="go back" className="w-8 h-8" />
                 </Link>
               </div>
-            </div>
+            </div> */}
             <a
               alt="logo"
               aria-label="Go to homepage"

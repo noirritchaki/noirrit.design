@@ -22,6 +22,7 @@ import Orange from "../assets/underorange.png";
 import DontCall from "../assets/dontcallme.png";
 import Big5 from "../assets/big5.png";
 import BlueO from "../assets/blue-o.png";
+import arrowBack from "../assets/arrow.svg";
 
 const About = () => {
   const hobbies = [
@@ -101,6 +102,24 @@ const About = () => {
       <div className="md:min-w-[512px] md:w-full md:max-w-xl">
         <div className="flex flex-col justify-start max-w-2xl px-8 py-36">
           <div className="flex items-center w-full h-8 mb-12 group">
+            <div className="relative">
+              <motion.div
+                initial={{ opacity: 0, y: -6, filter: "blur(4px)" }}
+                animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+                transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
+                className="absolute -top-16 -left-[42px] flex flex-col items-center gap-1"
+              >
+                <Link
+                  to="/"
+                  className="flex flex-col items-center gap-1 text-[#667085] text-sm hover:text-[#182230] transition-colors"
+                >
+                  <span className="whitespace-nowrap text-center font-caveat text-[16px] tracking-tighter">
+                    go back
+                  </span>
+                  <img src={arrowBack} alt="go back" className="w-8 h-8" />
+                </Link>
+              </motion.div>
+            </div>
             <a
               alt="logo"
               aria-label="Go to homepage"
