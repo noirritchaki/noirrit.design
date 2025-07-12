@@ -6,5 +6,9 @@
 
 :root {
   font-family: "Inter Tight", sans-serif;
-  cursor: url("./assets/cursor1.svg"), auto;
+  cursor: none;
+}
+
+:root *:hover {
+  cursor: none;
 }

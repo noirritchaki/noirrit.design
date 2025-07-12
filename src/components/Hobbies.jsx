@@ -10,7 +10,7 @@ const Hobbies = ({ image, title, subtitle, videoUrl }) => {
     <>
       <motion.div
         className="flex flex-col"
-        style={{ cursor: "nesw-resize" }}
+        style={{ cursor: "none" }}
         whileHover={{
           scale: 1.05,
           rotate: -2,

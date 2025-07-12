@@ -7,6 +7,7 @@ import HaikuPage from "./components/HaikuPage";
 import HealthCheckup from "./components/healthCheckup";
 import PlumWallet from "./components/plumWallet";
 import SparkleEffect from "./components/SparkleEffect";
+import CustomCursor from "./components/Cursor";
 
 const Home = () => (
   <div>
@@ -20,6 +21,7 @@ const App = () => {
   return (
     <Router>
       {/* <SparkleEffect /> */}
+      <CustomCursor />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
