@@ -50,7 +50,7 @@ const Navbar = () => {
               />
             </a>
             <div className="flex flex-row gap-4">
-              <a alt="about" aria-label="Go to about" href="/">
+              <a alt="about" aria-label="Go to about">
                 <Link
                   to="/about"
                   className="inline font-normal underline-offset-2 hover:underline decoration-[#182230]"
@@ -59,7 +59,7 @@ const Navbar = () => {
                   about
                 </Link>
               </a>
-              <a alt="connect" aria-label="Go to connect" href="/">
+              <a alt="connect" aria-label="Go to connect">
                 <Link
                   to="/connect"
                   className="inline font-normal underline-offset-2 hover:underline decoration-[#182230]"
@@ -68,7 +68,7 @@ const Navbar = () => {
                   connect
                 </Link>
               </a>
-              <a alt="resume" aria-label="Go to resume" href="/">
+              <a alt="resume" aria-label="Go to resume">
                 <Link
                   to="https://read.cv/noirrit"
                   target="_blank"

@@ -30,15 +30,12 @@ const plumWallet = () => {
                 transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
                 className="absolute -top-16 -left-[42px] flex flex-col items-center gap-1"
               >
-                <Link
-                  to="/"
-                  className="flex flex-col items-center gap-1 text-[#667085] text-sm hover:text-[#182230] transition-colors"
-                >
+                <div className="flex flex-col items-center gap-1 text-[#8375EF] text-sm">
                   <span className="whitespace-nowrap text-center font-caveat text-[16px] tracking-tighter">
                     go back
                   </span>
                   <img src={arrowBack} alt="go back" className="w-8 h-8" />
-                </Link>
+                </div>
               </motion.div>
             </div>
             <a
@@ -56,7 +53,7 @@ const plumWallet = () => {
               />
             </a>
             <div className="flex flex-row gap-4">
-              <a alt="about" aria-label="Go to about" href="/">
+              <a alt="about" aria-label="Go to about">
                 <Link
                   to="/about"
                   className="inline font-normal underline-offset-2 hover:underline decoration-[#D0D5DD]"
@@ -65,7 +62,7 @@ const plumWallet = () => {
                   about
                 </Link>
               </a>
-              <a alt="connect" aria-label="Go to connect" href="/">
+              <a alt="connect" aria-label="Go to connect">
                 <Link
                   to="/connect"
                   className="inline font-normal underline-offset-2 hover:underline decoration-[#D0D5DD]"
@@ -74,7 +71,7 @@ const plumWallet = () => {
                   connect
                 </Link>
               </a>
-              <a alt="resume" aria-label="Go to resume" href="/">
+              <a alt="resume" aria-label="Go to resume">
                 <Link
                   to="https://read.cv/noirrit"
                   target="_blank"
