@@ -23,6 +23,7 @@ import DontCall from "../assets/dontcallme.png";
 import Big5 from "../assets/big5.png";
 import BlueO from "../assets/blue-o.png";
 import arrowBack from "../assets/arrow.svg";
+import GoBack from "./GoBack";
 
 const About = () => {
   const hobbies = [
@@ -100,7 +101,7 @@ const About = () => {
   return (
     <div className="md:flex md:flex-row md:justify-center">
       <div className="md:min-w-[512px] md:w-full md:max-w-xl">
-        <div className="flex flex-col justify-start max-w-2xl mx-auto px-4 sm:px-12 md:px-8 py-36">
+        <div className="flex flex-col justify-start max-w-2xl px-8 py-36">
           <div className="flex items-center w-full h-8 mb-12 group">
             <div className="relative">
               <motion.div
@@ -109,12 +110,7 @@ const About = () => {
                 transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
                 className="absolute -top-16 -left-[42px] flex flex-col items-center gap-1"
               >
-                <div className="flex flex-col items-center gap-1 text-[#8375EF] text-sm">
-                  <span className="whitespace-nowrap text-center font-caveat text-[16px] tracking-tighter">
-                    go back
-                  </span>
-                  <img src={arrowBack} alt="go back" className="w-8 h-8" />
-                </div>
+                <GoBack />
               </motion.div>
             </div>
             <a

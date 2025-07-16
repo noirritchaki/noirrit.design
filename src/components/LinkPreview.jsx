@@ -9,6 +9,7 @@ import {
   useSpring,
 } from "motion/react";
 import { cn } from "../utils";
+import { Link } from "react-router-dom";
 
 export const LinkPreview = ({
   children,
@@ -109,8 +110,8 @@ export const LinkPreview = ({
                   x: translateX,
                 }}
               >
-                <a
-                  href={url}
+                <Link
+                  to={url}
                   className="block p-1 bg-white border-2 border-transparent shadow rounded-xl hover:border-neutral-200 dark:hover:border-neutral-800"
                   style={{ fontSize: 0 }}
                   target={isExternal ? "_blank" : "_self"}
@@ -122,7 +123,7 @@ export const LinkPreview = ({
                     className="rounded-lg"
                     alt="preview image"
                   />
-                </a>
+                </Link>
               </motion.div>
             )}
           </AnimatePresence>

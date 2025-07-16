@@ -36,7 +36,7 @@ const CustomCursor = () => {
   return (
     <motion.img
       src={CursorSVG}
-      className="fixed top-0 left-0 w-4 h-4 pointer-events-none z-[9999]"
+      className="hidden md:flex fixed top-0 left-0 w-4 h-4 pointer-events-none z-[9999]"
       animate={{
         x: position.x,
         y: position.y,
