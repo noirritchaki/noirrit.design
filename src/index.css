@@ -13,3 +13,9 @@
 :root *:hover {
   cursor: none;
 }
+
+@media (max-width: 767px) {
+  .custom-cursor {
+    display: none;
+  }
+}
