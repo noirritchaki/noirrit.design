@@ -164,7 +164,7 @@ const Navbar = () => {
                 take a look at some of my{" "}
                 <LinkPreview
                   className="inline font-medium hover:underline trasition duration-300 cursor-pointer !text-[#182230]"
-                  url={"/about"}
+                  url={"https://noirrit-design.vercel.app/about"}
                 >
                   {" "}
                   hobbies,
