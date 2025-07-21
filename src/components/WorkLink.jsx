@@ -4,7 +4,7 @@ import styles from "./Navbar.module.css";
 const WorkLink = ({ showcase, title, year }) => {
   return (
     <div
-      className="relative group -ml-4"
+      className="relative group -ml-4 overflow-x-hidden"
       initial={{ opacity: 0.8, scale: 0.95 }}
       whileHover={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.4, ease: "easeInOut" }}
@@ -13,7 +13,7 @@ const WorkLink = ({ showcase, title, year }) => {
       <motion.div className="relative">
         <a
           href="#"
-          className="relative p-4 w-screen max-w-[512px] transition-all duration-300 inline-flex flex-col gap-1 py-2 no-underline text-black"
+          className="relative p-4 w-full max-w-full transition-all duration-300 inline-flex flex-col gap-1 py-2 no-underline text-black"
         >
           <motion.span
             className="underline decoration-zinc-100 underline-offset-2 cursor-pointer"
