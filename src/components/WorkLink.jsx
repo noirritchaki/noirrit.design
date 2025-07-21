@@ -13,7 +13,7 @@ const WorkLink = ({ showcase, title, year }) => {
       <motion.div className="relative">
         <a
           href="#"
-          className="relative p-4 md:w-screen md:max-w-[512px] transition-all duration-300 inline-flex flex-col gap-1 py-2 no-underline text-black"
+          className="relative p-4 w-screen md:w-screen md:max-w-[512px] transition-all duration-300 inline-flex flex-col gap-1 py-2 no-underline text-black"
         >
           <motion.span
             className="underline decoration-zinc-100 underline-offset-2 cursor-pointer"
