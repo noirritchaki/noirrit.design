@@ -15,6 +15,7 @@ import redplum from "../assets/red-plum.svg";
 import ConstructionFAB from "./ConstructionFAB";
 import { LinkPreview } from "./LinkPreview";
 import arrowBack from "../assets/arrow.svg";
+import { DEPLOYMENT_URL } from "../constants";
 
 const Navbar = () => {
   return (
@@ -164,14 +165,14 @@ const Navbar = () => {
                 take a look at some of my{" "}
                 <LinkPreview
                   className="inline font-medium hover:underline trasition duration-300 cursor-pointer !text-[#182230]"
-                  url={"https://noirrit-design.vercel.app/about"}
+                  url={`${DEPLOYMENT_URL}/about`}
                 >
                   {" "}
                   hobbies,
                 </LinkPreview>
                 <LinkPreview
                   className="inline font-medium hover:underline trasition duration-300 cursor-pointer !text-[#182230]"
-                  url={"/haiku"}
+                  url={`${DEPLOYMENT_URL}/haiku`}
                 >
                   {" "}
                   haiku {""}
