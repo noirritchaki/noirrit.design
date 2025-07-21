@@ -10,10 +10,10 @@ const WorkLink = ({ showcase, title, year }) => {
       transition={{ duration: 0.4, ease: "easeInOut" }}
       // the "group" here is what helps to control the hover state of child elements
     >
-      <motion.div className="relative w-full">
+      <motion.div className="relative">
         <a
           href="#"
-          className="relative p-4 md:w-screen md:max-w-[512px] transition-all duration-300 inline-flex flex-col gap-1 py-2 no-underline text-black"
+          className="relative p-4 w-full md:max-w-[512px] transition-all duration-300 inline-flex flex-col gap-1 py-2 no-underline text-black"
         >
           <motion.span
             className="underline decoration-zinc-100 underline-offset-2 cursor-pointer"
@@ -33,7 +33,7 @@ const WorkLink = ({ showcase, title, year }) => {
 
         {/* adding hover on text  */}
         <motion.div
-          className="absolute left-0 top-0 w-screen md:w-screen h-full md:max-w-[512px] inset-0 group-hover:bg-zinc-100 group-hover:rounded-lg transition-all duration-300 -z-10"
+          className="absolute left-0 top-0 h-full w-full md:max-w-[512px] inset-0 group-hover:bg-zinc-100 group-hover:rounded-lg transition-all duration-300 -z-10"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.3 }}

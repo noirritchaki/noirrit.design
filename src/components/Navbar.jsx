@@ -220,7 +220,7 @@ const Navbar = () => {
 
             {/* work section */}
 
-            <div className="z-10 flex flex-col gap-2 w-fit shrink-0 mt-8">
+            <div className="z-10 flex flex-col gap-2 w-full shrink-0 mt-8">
               <h2
                 className="inline font-medium mb-[16px] bg-[#dcfce7] px-1 w-fit"
                 style={{ fontSize: "16px", color: "#404040" }}
