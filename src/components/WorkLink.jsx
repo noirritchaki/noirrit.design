@@ -33,7 +33,7 @@ const WorkLink = ({ showcase, title, year }) => {
 
         {/* adding hover on text  */}
         <motion.div
-          className="absolute left-0 top-0 w-full md:w-screen h-full md:max-w-[512px] inset-0 group-hover:bg-zinc-100 group-hover:rounded-lg transition-all duration-300 -z-10"
+          className="absolute left-0 top-0 w-screen md:w-screen h-full md:max-w-[512px] inset-0 group-hover:bg-zinc-100 group-hover:rounded-lg transition-all duration-300 -z-10"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.3 }}
