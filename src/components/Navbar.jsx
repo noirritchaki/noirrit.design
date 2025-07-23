@@ -16,14 +16,21 @@ import ConstructionFAB from "./ConstructionFAB";
 import { LinkPreview } from "./LinkPreview";
 import arrowBack from "../assets/arrow.svg";
 import { DEPLOYMENT_URL } from "../constants";
+import CurrentlyPlaying from "./CurrentlyPlaying";
+
+// https://jet2holiday.vercel.app/api/currently-playing
+
+// {"isPlaying":true,"title":"Kyoto","artist":"Angara","album":"Rwanda","albumImage":"https://i.scdn.co/image/ab67616d0000b273de0cefe7cd9e5be4390f5a4a","songUrl":"https://open.spotify.com/track/0tPk6OPi760BD6C5WtqcqG"}
 
 const Navbar = () => {
   return (
     <div className="md:flex md:flex-row md:justify-center">
       <div className="md:min-w-[512px] md:w-full md:max-w-xl">
         <div className="flex flex-col justify-start max-w-2xl px-8 py-36">
-          <div className="flex items-center w-full h-8 mb-12 group">
-            {/* <div className="relative">
+          <div className="flex flex-col w-full mb-12">
+            <CurrentlyPlaying />
+            <div className="flex items-center w-full h-8 mb-12 group">
+              {/* <div className="relative">
               <div className="absolute -top-16 -left-[42px] flex flex-col items-center gap-1">
                 <Link
                   to="/"
@@ -36,50 +43,51 @@ const Navbar = () => {
                 </Link>
               </div>
             </div> */}
-            <a
-              alt="logo"
-              aria-label="Go to homepage"
-              href="/"
-              className="mr-10"
-            >
-              <img
-                width="56"
-                height="56"
-                src={homeme}
+              <a
                 alt="logo"
-                className="rounded-[16px] shadow-lg hover:shadow-xl hover:scale-105 hover:rotate-3 transition-transform duration-300 ease-in-out"
-              />
-            </a>
-            <div className="flex flex-row gap-4">
-              <a alt="about" aria-label="Go to about">
-                <Link
-                  to="/about"
-                  className="inline font-normal underline-offset-2 hover:underline decoration-[#182230]"
-                  style={{ fontSize: "14px", color: "#667085" }}
-                >
-                  about
-                </Link>
+                aria-label="Go to homepage"
+                href="/"
+                className="mr-10"
+              >
+                <img
+                  width="56"
+                  height="56"
+                  src={homeme}
+                  alt="logo"
+                  className="rounded-[16px] shadow-lg hover:shadow-xl hover:scale-105 hover:rotate-3 transition-transform duration-300 ease-in-out"
+                />
               </a>
-              <a alt="connect" aria-label="Go to connect">
-                <Link
-                  to="/connect"
-                  className="inline font-normal underline-offset-2 hover:underline decoration-[#182230]"
-                  style={{ fontSize: "14px", color: "#667085" }}
-                >
-                  connect
-                </Link>
-              </a>
-              <a alt="resume" aria-label="Go to resume">
-                <Link
-                  to="https://read.cv/noirrit"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline font-normal underline-offset-2 hover:underline decoration-[#182230]"
-                  style={{ fontSize: "14px", color: "#667085" }}
-                >
-                  resume
-                </Link>
-              </a>
+              <div className="flex flex-row gap-4">
+                <a alt="about" aria-label="Go to about">
+                  <Link
+                    to="/about"
+                    className="inline font-normal underline-offset-2 hover:underline decoration-[#182230]"
+                    style={{ fontSize: "14px", color: "#667085" }}
+                  >
+                    about
+                  </Link>
+                </a>
+                <a alt="connect" aria-label="Go to connect">
+                  <Link
+                    to="/connect"
+                    className="inline font-normal underline-offset-2 hover:underline decoration-[#182230]"
+                    style={{ fontSize: "14px", color: "#667085" }}
+                  >
+                    connect
+                  </Link>
+                </a>
+                <a alt="resume" aria-label="Go to resume">
+                  <Link
+                    to="https://read.cv/noirrit"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline font-normal underline-offset-2 hover:underline decoration-[#182230]"
+                    style={{ fontSize: "14px", color: "#667085" }}
+                  >
+                    resume
+                  </Link>
+                </a>
+              </div>
             </div>
           </div>
           <motion.div
