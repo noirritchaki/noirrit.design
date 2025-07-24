@@ -33,12 +33,17 @@ export default function CurrentlyPlaying() {
     <div className="relative">
       <motion.div
         initial={{ opactity: 0, y: 10 }}
-        animate={{ opacity: 1, y: [0, -4, 0, 4, 0] }}
+        animate={{
+          opacity: 1,
+          y: [0, -1.5, 0, 1.5, 0],
+          x: [0, 0.8, 0, -0.8, 0],
+          scale: [1, 1.01, 1, 0.99, 1],
+        }}
         transition={{
-          duration: 4,
+          duration: 6,
           repeat: Infinity,
           repeatType: "mirror",
-          ease: easeInOut,
+          ease: [0.445, 0.05, 0.55, 0.95],
         }}
         className="absolute top-0 left-14 mt-[-84px]"
       >
@@ -63,9 +68,14 @@ export default function CurrentlyPlaying() {
             className="w-10 h-10 rounded-md shadow-md"
           />
           <div className="flex flex-col overflow-hidden">
-            <span className="text-[12px] text-[#182230] font-medium truncate">
+            <a
+              href={song.songUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[12px] text-[#182230] font-medium truncate hover:underline"
+            >
               {song.title}
-            </span>
+            </a>
             <span className="text-[10px] text-gray-500 truncate">
               {song.artist}
             </span>
