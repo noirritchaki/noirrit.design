@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { easeInOut, motion } from "framer-motion";
 import BubbleTail from "../assets/bubble-tail.svg";
 
 export default function CurrentlyPlaying() {
@@ -31,7 +31,17 @@ export default function CurrentlyPlaying() {
   }
   return (
     <div className="relative">
-      <div className="absolute top-0 left-14 mt-[-84px]">
+      <motion.div
+        initial={{ opactity: 0, y: 10 }}
+        animate={{ opacity: 1, y: [0, -4, 0, 4, 0] }}
+        transition={{
+          duration: 4,
+          repeat: Infinity,
+          repeatType: "mirror",
+          ease: easeInOut,
+        }}
+        className="absolute top-0 left-14 mt-[-84px]"
+      >
         {/* Tail */}
         <img
           src={BubbleTail}
@@ -64,7 +74,7 @@ export default function CurrentlyPlaying() {
             </span>
           </div>
         </motion.div>
-      </div>
+      </motion.div>
     </div>
   );
 }
