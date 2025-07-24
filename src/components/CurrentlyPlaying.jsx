@@ -32,7 +32,8 @@ export default function CurrentlyPlaying() {
   return (
     <div className="relative">
       <motion.div
-        initial={{ opactity: 0, y: 10 }}
+        title="Currently listening on Spotify"
+        initial={{ y: 5 }}
         animate={{
           opacity: 1,
           y: [0, -1.5, 0, 1.5, 0],
@@ -59,9 +60,13 @@ export default function CurrentlyPlaying() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
-          className="relative flex items-center gap-2 pl-3 pr-4 py-2 max-w-xs bg-[#f5f5f5] rounded-2xl z-10"
+          className="relative flex gap-2 items-center pl-3 pr-4 py-2 max-w-xs bg-[#f5f5f5] rounded-2xl z-10"
           style={{ borderRadius: "14px" }}
         >
+          {/* <span className="text-[8px] font-medium text-[#4B5563] uppercase">
+            Currently listening on Spotify
+          </span> */}
+          {/* <div className="flex items-center gap-2"> */}
           <img
             src={song.albumImage}
             alt={song.title}
@@ -83,6 +88,7 @@ export default function CurrentlyPlaying() {
               {song.album}
             </span>
           </div>
+          {/* </div> */}
         </motion.div>
       </motion.div>
     </div>
