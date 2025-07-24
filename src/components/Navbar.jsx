@@ -17,6 +17,7 @@ import { LinkPreview } from "./LinkPreview";
 import arrowBack from "../assets/arrow.svg";
 import { DEPLOYMENT_URL } from "../constants";
 import CurrentlyPlaying from "./CurrentlyPlaying";
+import BubbleTail from "../assets/bubble-tail.svg";
 
 // https://jet2holiday.vercel.app/api/currently-playing
 
@@ -27,7 +28,8 @@ const Navbar = () => {
     <div className="md:flex md:flex-row md:justify-center">
       <div className="md:min-w-[512px] md:w-full md:max-w-xl">
         <div className="flex flex-col justify-start max-w-2xl px-8 py-36">
-          <div className="flex flex-col w-full mb-12">
+          {/* <div className="flex flex-col w-full mb-12"> */}
+          <div className="relative">
             <CurrentlyPlaying />
             <div className="flex items-center w-full h-8 mb-12 group">
               {/* <div className="relative">

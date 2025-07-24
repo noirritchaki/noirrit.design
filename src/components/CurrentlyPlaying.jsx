@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import BubbleTail from "../assets/bubble-tail.svg";
 
 export default function CurrentlyPlaying() {
   const [song, setSong] = useState(null);
@@ -29,30 +30,41 @@ export default function CurrentlyPlaying() {
     return <p className="text-gray-500">No song is pplaying right now</p>;
   }
   return (
-    <motion.div
-      className="flex items-center gap-4 p-4 bg-white shadow-lg rounded-xl max-w-md"
-      initial={{ opacity: 0, y: 10 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.4 }}
-    >
-      <img
-        src={song.albumImage}
-        alt={song.title}
-        className="w-16 h-16 rounded-md shadow-md"
-      />
-      <div className="flex flex-col overflow-hidden">
-        <span className="text-lg font-semibold truncate">{song.title}</span>
-        <span className="text-sm text-gray-600 truncate">{song.artist}</span>
-        <span className="text-xs text-gray-400 truncate">{song.album}</span>
+    <div className="relative">
+      <div className="absolute top-0 left-14 mt-[-84px]">
+        {/* Tail */}
+        <img
+          src={BubbleTail}
+          alt=""
+          className="absolute -bottom-0 -left-2 w-6 h-6 z-0"
+        />
+
+        {/* Bubble */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4 }}
+          className="relative flex items-center gap-2 pl-3 pr-4 py-2 max-w-xs bg-[#f5f5f5] rounded-2xl z-10"
+          style={{ borderRadius: "14px" }}
+        >
+          <img
+            src={song.albumImage}
+            alt={song.title}
+            className="w-10 h-10 rounded-md shadow-md"
+          />
+          <div className="flex flex-col overflow-hidden">
+            <span className="text-[12px] text-[#182230] font-medium truncate">
+              {song.title}
+            </span>
+            <span className="text-[10px] text-gray-500 truncate">
+              {song.artist}
+            </span>
+            <span className="text-[10px] text-gray-400 truncate">
+              {song.album}
+            </span>
+          </div>
+        </motion.div>
       </div>
-      <a
-        href={song.songUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="ml-auto text-sm text-indigo-600 hover:underline"
-      >
-        Open
-      </a>
-    </motion.div>
+    </div>
   );
 }
