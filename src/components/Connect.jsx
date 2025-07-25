@@ -5,12 +5,16 @@ import aboutme from "../assets/about-me.svg";
 import connectme from "../assets/connect-me.JPG";
 import arrowBack from "../assets/arrow.svg";
 import GoBack from "./GoBack";
+import CurrentlyPlaying from "./CurrentlyPlaying";
 
 const Connect = () => {
   return (
     <div className="md:flex md:flex-row md:justify-center">
       <div className="md:min-w-[512px] md:w-full md:max-w-xl">
         <div className="flex flex-col justify-start max-w-2xl px-8 py-36">
+          <div className="relative">
+            <CurrentlyPlaying />
+          </div>
           {/* Navigation */}
           <div className="flex items-center w-full h-8 mb-12 group">
             <div className="relative">
