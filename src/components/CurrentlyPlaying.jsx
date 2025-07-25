@@ -20,12 +20,18 @@ export default function CurrentlyPlaying() {
   const [song, setSong] = useState(null);
 
   useEffect(() => {
-    (async () => {
+    // (async () => {
+    const getSong = async () => {
       const data = await fetchSong(); //this is defined in services/index.js
       setSong(data);
-    })();
+    };
 
-    const interval = setInterval(fetchSong, 20000);
+    getSong(); //fetching the song again
+
+    // const interval = setInterval(fetchSong, 20000);
+    const interval = setInterval(() => {
+      getSong();
+    }, 20000);
     return () => clearInterval(interval);
   }, []);
 
