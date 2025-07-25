@@ -1,23 +1,16 @@
 import { useEffect, useState } from "react";
 import { easeInOut, motion } from "framer-motion";
 import BubbleTail from "../assets/bubble-tail.svg";
+import { fetchSong } from "../services";
 
 export default function CurrentlyPlaying() {
   const [song, setSong] = useState(null);
 
   useEffect(() => {
-    async function fetchSong() {
-      try {
-        const res = await fetch(
-          "https://jet2holiday.vercel.app/api/currently-playing"
-        );
-        const data = await res.json();
-        setSong(data);
-      } catch (err) {
-        console.error("Error fetching currently playing:", err);
-      }
-    }
-    fetchSong();
+    (async () => {
+      const data = await fetchSong();
+      setSong(data);
+    })();
 
     const interval = setInterval(fetchSong, 20000);
     return () => clearInterval(interval);
@@ -26,9 +19,6 @@ export default function CurrentlyPlaying() {
   if (!song) {
     // return <p className="text-gray-500">Song is loading</p>;
     return null;
-  }
-  if (!song.isPlaying) {
-    return <p className="text-gray-500">No song is pplaying right now</p>;
   }
   return (
     <div className="relative">
