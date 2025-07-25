@@ -19,12 +19,7 @@ const Connect = () => {
                 transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
                 className="absolute -top-16 -left-[42px] flex flex-col items-center gap-1"
               >
-                <div className="flex flex-col items-center gap-1 text-[#8375EF] text-sm">
-                  <span className="whitespace-nowrap text-center font-caveat text-[16px] tracking-tighter">
-                    go back
-                  </span>
-                  <img src={arrowBack} alt="go back" className="w-8 h-8" />
-                </div>
+                <GoBack />
               </motion.div>
             </div>
             <a href="/" className="mr-10">

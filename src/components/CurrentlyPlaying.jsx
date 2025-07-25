@@ -24,7 +24,8 @@ export default function CurrentlyPlaying() {
   }, []);
 
   if (!song) {
-    return <p className="text-gray-500">Song is loading</p>;
+    // return <p className="text-gray-500">Song is loading</p>;
+    return null;
   }
   if (!song.isPlaying) {
     return <p className="text-gray-500">No song is pplaying right now</p>;
