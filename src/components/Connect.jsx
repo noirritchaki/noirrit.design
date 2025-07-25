@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import aboutme from "../assets/about-me.svg";
 import connectme from "../assets/connect-me.JPG";
 import arrowBack from "../assets/arrow.svg";
+import GoBack from "./GoBack";
 
 const Connect = () => {
   return (

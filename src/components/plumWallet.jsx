@@ -16,6 +16,7 @@ import plans from "../assets/plans.png";
 import mainimg from "../assets/mockup.png";
 import walletimg from "../assets/health-wallet-mockup.png";
 import arrowBack from "../assets/arrow.svg";
+import GoBack from "./GoBack";
 
 const plumWallet = () => {
   return (

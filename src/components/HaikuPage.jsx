@@ -14,6 +14,7 @@ import pheart from "../assets/plumheart.svg";
 import homeme from "../assets/home-me.jpg";
 import redplum from "../assets/red-plum.svg";
 import arrowBack from "../assets/arrow.svg";
+import GoBack from "./GoBack";
 
 const haikus = [
   "An old silent pond\nA frog jumps into the pond—\nSplash! Silence again.\n\n~Matsuo Bashō",

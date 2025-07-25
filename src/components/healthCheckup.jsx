@@ -15,6 +15,7 @@ import redplum from "../assets/red-plum.svg";
 import plans from "../assets/plans.png";
 import mainimg from "../assets/mockup.png";
 import arrowBack from "../assets/arrow.svg";
+import GoBack from "./GoBack";
 
 const healthCheckup = () => {
   return (
