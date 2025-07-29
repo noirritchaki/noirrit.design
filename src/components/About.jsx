@@ -198,18 +198,128 @@ const About = () => {
                     style={{ fontSize: "16px", color: "#667085" }}
                   >
                     {" "}
-                    hello hello! i'm
+                    hi! i'm
                     <span
                       className="inline font-medium"
                       style={{ color: "#182230" }}
                     >
                       {" "}
-                      noirrit,{" "}
+                      noirrit!{" "}
                     </span>
-                    a product designer at Plum where we make insurance and
-                    healthcare more accessible, easy and inclusive for everyone!
+                    {/* a product designer at Plum where we make insurance and
+                    healthcare more accessible, easy and inclusive for everyone! */}
                   </h1>
-                  <h1
+                  <div className="flex flex-col gap-6">
+                    {/* Item 1 */}
+                    <div className="flex gap-3">
+                      {/* Number column */}
+                      <div
+                        className="text-[#667085] font-regular"
+                        style={{
+                          fontSize: "14px",
+                          // minWidth: "24px",
+                          textAlign: "right",
+                          lineHeight: "1.8",
+                        }}
+                      >
+                        1.
+                      </div>
+
+                      {/* Text column */}
+                      <div className="flex-1">
+                        <h2
+                          className="font-regular text-[#667085]"
+                          style={{ fontSize: "16px" }}
+                        >
+                          i design with purpose
+                        </h2>
+                        <p
+                          className="text-[#667085]"
+                          style={{
+                            fontSize: "16px",
+                            lineHeight: "1.6",
+                            paddingTop: "4px",
+                          }}
+                        >
+                          i’m a product designer at Plum, building experiences
+                          that make insurance and healthcare feel approachable,
+                          helpful and human.
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Item 2 */}
+                    <div className="flex gap-4">
+                      <div
+                        className="text-[#667085] font-regular"
+                        style={{
+                          fontSize: "14px",
+                          // minWidth: "24px",
+                          textAlign: "right",
+                          lineHeight: "1.8",
+                        }}
+                      >
+                        2.
+                      </div>
+                      <div className="flex-1">
+                        <h2
+                          className="font-regular text-[#667085]"
+                          style={{ fontSize: "16px" }}
+                        >
+                          a little obsessed (in the best way)
+                        </h2>
+                        <p
+                          className="text-[#667085]"
+                          style={{
+                            fontSize: "16px",
+                            lineHeight: "1.6",
+                            paddingTop: "4px",
+                          }}
+                        >
+                          i love diving into new things. right now it’s rock
+                          climbing, equal parts thrill and bruises, but always
+                          worth it.
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Item 3 */}
+                    <div className="flex gap-4">
+                      <div
+                        className="text-[#667085] font-regular"
+                        style={{
+                          fontSize: "14px",
+                          // minWidth: "24px",
+                          textAlign: "right",
+                          lineHeight: "1.8",
+                        }}
+                      >
+                        3.
+                      </div>
+                      <div className="flex-1">
+                        <h2
+                          className="font-regular text-[#667085]"
+                          style={{ fontSize: "16px" }}
+                        >
+                          side quests keep me sane
+                        </h2>
+                        <p
+                          className="text-[#667085]"
+                          style={{
+                            fontSize: "16px",
+                            lineHeight: "1.6",
+                            paddingTop: "4px",
+                          }}
+                        >
+                          outside of work, i’m brewing (and drinking way too
+                          much) coffee, creating a bunch of videos, and trying
+                          my hand at some music production, running, climbing,
+                          at the gym... i realise i do a lot haha.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  {/* <h1
                     className="inline font-regular leading-normal max-w-[500px]"
                     style={{ fontSize: "16px", color: "#667085" }}
                   >
@@ -223,7 +333,7 @@ const About = () => {
                     apart from all this i also spend a lot of time brewing(and
                     consuming) a lot of coffee, shoot fun videos and learning
                     how to make some house music!
-                  </h1>
+                  </h1> */}
                 </div>
                 <div className="flex flex-col gap-6 mt-10">
                   <div className="flex flex-col gap-1">

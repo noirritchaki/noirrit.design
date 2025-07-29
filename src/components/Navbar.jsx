@@ -157,36 +157,37 @@ const Navbar = () => {
                 style={{ fontSize: "16px", color: "#667085" }}
               >
                 {" "}
-                hello hello! welcome to my
-                <span
+                hello hello! welcome to my digital canvas.{" "}
+                {/* <span
                   className="inline font-medium"
                   style={{ color: "#182230" }}
                 >
                   {" "}
                   digital canvas.{" "}
-                </span>
-                creating is what i do best, and right now, i’m crafting
-                experiences at Plum.
+                </span> */}
+                i build things that make people go <em>“oh, nice!”</em>, and
+                right now i’m crafting experiences at Plum.
               </h1>
               <h1
                 className="inline font-regular leading-normal max-w-[500px]"
                 style={{ fontSize: "16px", color: "#667085" }}
               >
-                take a look at some of my{" "}
+                you can check out my{" "}
                 <LinkPreview
                   className="inline font-medium hover:underline trasition duration-300 cursor-pointer !text-[#182230]"
                   url={`${DEPLOYMENT_URL}/about`}
                 >
                   {" "}
                   hobbies,
-                </LinkPreview>
+                </LinkPreview>{" "}
+                get a random
                 <LinkPreview
                   className="inline font-medium hover:underline trasition duration-300 cursor-pointer !text-[#182230]"
                   url={`${DEPLOYMENT_URL}/haiku`}
                 >
                   {" "}
-                  haiku {""}
-                </LinkPreview>
+                  song recommendation
+                </LinkPreview>{" "}
                 or just{" "}
                 <LinkPreview
                   className="inline font-medium hover:underline trasition duration-300 cursor-pointer !text-[#182230]"
@@ -201,7 +202,7 @@ const Navbar = () => {
                 className="inline font-regular leading-normal max-w-[500px]"
                 style={{ fontSize: "16px", color: "#667085" }}
               >
-                when i'm not in front of my laptop you'll either find me in the{" "}
+                when I’m not behind a screen, you’ll probably spot me at the{" "}
                 <LinkPreview
                   className="inline font-medium hover:underline trasition duration-300 cursor-pointer !text-[#182230]"
                   url={"/haiku"}
@@ -219,8 +220,9 @@ const Navbar = () => {
                   className="inline font-medium hover:underline trasition duration-300 cursor-pointer !text-[#182230]"
                   url={"/haiku"}
                 >
-                  bangalore traffic.
-                </LinkPreview>
+                  bangalore traffic
+                </LinkPreview>{" "}
+                <span className="text-[12px]">(send help).</span>
               </h1>
             </div>
 
