@@ -25,14 +25,26 @@ import BlueO from "../assets/blue-o.png";
 import arrowBack from "../assets/arrow.svg";
 import GoBack from "./GoBack";
 import CurrentlyPlaying from "./CurrentlyPlaying";
+import BigPinch from "../assets/big-pinch.png";
+import BumpIt from "../assets/bump-it.png";
+import YellowRanger from "../assets/yellow-ranger.png";
 
 const About = () => {
   const hobbies = [
     {
-      image: Pink,
-      title: "Flag Out",
-      subtitle: "Bouldering",
-      videoUrl: "/videos/FlagOut.MP4",
+      image: BumpIt,
+      title: "Bump It",
+      videoUrl: "/videos/bump-it.MP4",
+    },
+    {
+      image: BigPinch,
+      title: "Big Pinch",
+      videoUrl: "/videos/big-pinch.MP4",
+    },
+    {
+      image: YellowRanger,
+      title: "Yellow Ranger",
+      videoUrl: "/videos/yellow-ranger.MP4",
     },
     {
       image: Orange,
@@ -43,6 +55,12 @@ const About = () => {
       image: DontCall,
       title: "Don't Call Me",
       videoUrl: "/videos/dontcallme.mp4",
+    },
+    {
+      image: Pink,
+      title: "Flag Out",
+      subtitle: "Bouldering",
+      videoUrl: "/videos/FlagOut.MP4",
     },
     {
       image: Sketch,
@@ -66,15 +84,19 @@ const About = () => {
       videoUrl: "/videos/blue.o.MP4",
     },
     {
-      image: Slab,
-      title: "Everyone Loves Slab",
-      videoUrl: "/videos/slab-lol.MOV",
+      image: Green,
+      title: "Green Goblin",
+      videoUrl: "/videos/greengoblin.MOV",
     },
     {
       image: PostIt,
       title: "Post It Note",
-      videoUrl:
-        "https://drive.google.com/file/d/1AHr-GYyIA1Hgkk9qmpYloU6tihrr00_r/view?usp=drive_link",
+      videoUrl: "/videos/postit.MOV",
+    },
+    {
+      image: Slab,
+      title: "Everyone Loves Slab",
+      videoUrl: "/videos/slab-lol.MOV",
     },
     { image: Zomaland, title: "Zomaland", videoUrl: "/videos/zomaland.MOV" },
     { image: Yellow, title: "All Yellow", videoUrl: "/videos/yellow-dyno.MOV" },
@@ -87,11 +109,6 @@ const About = () => {
       image: Depression,
       title: "Depression",
       videoUrl: "/videos/depression.MOV",
-    },
-    {
-      image: Green,
-      title: "Green Goblin",
-      videoUrl: "/videos/greengoblin.MOV",
     },
     {
       image: White,
