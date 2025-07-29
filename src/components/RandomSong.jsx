@@ -115,6 +115,20 @@ export default function RandomSong() {
                 {song.title}
               </a>
               <p className="text-[14px] text-[#667085]">{song.artist}</p>
+
+              {/* {song.previewUrl ? (
+                <audio
+                  controls
+                  src={song.previewUrl}
+                  className="mt-4 w-full max-w-xs"
+                >
+                  Your browser does not support the audio element.
+                </audio>
+              ) : (
+                <p className="text-[12px] text-gray-400 italic mt-4">
+                  no preview available
+                </p>
+              )} */}
               {song.playlist && (
                 <a
                   href={song.playlistUrl}
