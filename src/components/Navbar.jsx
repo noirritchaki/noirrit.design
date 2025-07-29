@@ -119,7 +119,7 @@ const Navbar = () => {
                       href="https://www.plumhq.com/"
                       className=""
                     > */}
-                      <span className="text-black">Plum</span>
+                      <span className="text-[#182230]">Plum</span>
                     </div>
                   </LinkPreview>
                 </h2>
@@ -180,14 +180,20 @@ const Navbar = () => {
                   {" "}
                   hobbies,
                 </LinkPreview>{" "}
-                get a random
-                <LinkPreview
+                get a random{" "}
+                {/* <LinkPreview
                   className="inline font-medium hover:underline trasition duration-300 cursor-pointer !text-[#182230]"
-                  url={`${DEPLOYMENT_URL}/haiku`}
+                  url={`${DEPLOYMENT_URL}/random-song`}
                 >
                   {" "}
                   song recommendation
-                </LinkPreview>{" "}
+                </LinkPreview>{" "} */}
+                <Link
+                  to="/random-song"
+                  className="inline font-medium hover:underline trasition duration-300 cursor-pointer !text-[#182230]"
+                >
+                  song recommendation
+                </Link>{" "}
                 or just{" "}
                 <LinkPreview
                   className="inline font-medium hover:underline trasition duration-300 cursor-pointer !text-[#182230]"

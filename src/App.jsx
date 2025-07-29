@@ -8,6 +8,7 @@ import HealthCheckup from "./components/healthCheckup";
 import PlumWallet from "./components/plumWallet";
 import SparkleEffect from "./components/SparkleEffect";
 import CustomCursor from "./components/Cursor";
+import RandomSong from "./components/RandomSong";
 
 const Home = () => (
   <div>
@@ -29,6 +30,7 @@ const App = () => {
         <Route path="/haiku" element={<HaikuPage />} />
         <Route path="/healthcheckup" element={<HealthCheckup />} />
         <Route path="/plumwallet" element={<PlumWallet />} />
+        <Route path="/random-song" element={<RandomSong />} />
       </Routes>
     </Router>
   );
