@@ -199,33 +199,33 @@ const About = () => {
                     className="inline font-medium"
                     style={{ fontSize: "20px" }}
                   >
-                    noirrit chaki
+                    hi! i'm noirrit
                   </h2>
                   <p
                     className="inline font-light text-zinc-400"
                     style={{ fontSize: "14px" }}
                   >
-                    / no-e-rith /
+                    / noy-rith /
                   </p>
                 </div>
 
                 <div className="flex flex-col gap-5">
-                  <h1
+                  {/* <h1
                     className="inline font-regular leading-normal max-w-[500px]"
                     style={{ fontSize: "16px", color: "#667085" }}
                   >
                     {" "}
-                    hi! i'm
-                    <span
+                    hi! i'm */}
+                  {/* <span
                       className="inline font-medium"
                       style={{ color: "#182230" }}
                     >
                       {" "}
                       noirrit!{" "}
-                    </span>
-                    {/* a product designer at Plum where we make insurance and
+                    </span> */}
+                  {/* a product designer at Plum where we make insurance and
                     healthcare more accessible, easy and inclusive for everyone! */}
-                  </h1>
+                  {/* </h1> */}
                   <div className="flex flex-col gap-6">
                     {/* Item 1 */}
                     <div className="flex gap-3">
