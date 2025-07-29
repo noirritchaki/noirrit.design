@@ -18,6 +18,9 @@ import arrowBack from "../assets/arrow.svg";
 import { DEPLOYMENT_URL } from "../constants";
 import CurrentlyPlaying from "./CurrentlyPlaying";
 import BubbleTail from "../assets/bubble-tail.svg";
+import HobbiesImage from "../assets/hobbiesimage.png";
+import ConnectImage from "../assets/connect-image.png";
+import SongRec from "../assets/song-rec.png";
 
 // https://jet2holiday.vercel.app/api/currently-playing
 
@@ -176,28 +179,34 @@ const Navbar = () => {
                 <LinkPreview
                   className="inline font-medium hover:underline trasition duration-300 cursor-pointer !text-[#182230]"
                   url={`${DEPLOYMENT_URL}/about`}
+                  isStatic={true}
+                  imageSrc={HobbiesImage}
                 >
                   {" "}
                   hobbies,
                 </LinkPreview>{" "}
                 get a random{" "}
-                {/* <LinkPreview
+                <LinkPreview
                   className="inline font-medium hover:underline trasition duration-300 cursor-pointer !text-[#182230]"
                   url={`${DEPLOYMENT_URL}/random-song`}
+                  isStatic={true}
+                  imageSrc={SongRec}
                 >
                   {" "}
                   song recommendation
-                </LinkPreview>{" "} */}
-                <Link
+                </LinkPreview>{" "}
+                {/* <Link
                   to="/random-song"
                   className="inline font-medium hover:underline trasition duration-300 cursor-pointer !text-[#182230]"
                 >
                   song recommendation
-                </Link>{" "}
+                </Link>{" "} */}
                 or just{" "}
                 <LinkPreview
                   className="inline font-medium hover:underline trasition duration-300 cursor-pointer !text-[#182230]"
                   url={"/connect"}
+                  isStatic={true}
+                  imageSrc={ConnectImage}
                 >
                   {" "}
                   get in touch.
