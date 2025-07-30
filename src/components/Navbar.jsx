@@ -21,6 +21,8 @@ import BubbleTail from "../assets/bubble-tail.svg";
 import HobbiesImage from "../assets/hobbiesimage.png";
 import ConnectImage from "../assets/connect-image.png";
 import SongRec from "../assets/song-rec.png";
+import EQ from "../assets/eq.png";
+import Gym from "../assets/gym.png";
 
 // https://jet2holiday.vercel.app/api/currently-playing
 
@@ -220,20 +222,24 @@ const Navbar = () => {
                 when I’m not behind a screen, you’ll probably spot me at the{" "}
                 <LinkPreview
                   className="inline font-medium hover:underline trasition duration-300 cursor-pointer !text-[#182230]"
-                  url={"/haiku"}
+                  url={"/https://maps.app.goo.gl/WGHkLbaufCzDSbqZ6"}
+                  isStatic={true}
+                  imageSrc={Gym}
                 >
                   gym,{" "}
                 </LinkPreview>
                 <LinkPreview
                   className="inline font-medium hover:underline trasition duration-300 cursor-pointer !text-[#182230]"
-                  url={"/haiku"}
+                  url={"https://maps.app.goo.gl/EL4XaGx6bp6rGtED6"}
+                  isStatic={true}
+                  imageSrc={EQ}
                 >
                   climbing station
                 </LinkPreview>{" "}
                 or stuck in{" "}
                 <LinkPreview
                   className="inline font-medium hover:underline trasition duration-300 cursor-pointer !text-[#182230]"
-                  url={"/haiku"}
+                  url={"/https://maps.app.goo.gl/GSa7r9EvYmtjUgKu7"}
                 >
                   bangalore traffic
                 </LinkPreview>{" "}
