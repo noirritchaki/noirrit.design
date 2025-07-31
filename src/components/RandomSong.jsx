@@ -99,7 +99,7 @@ export default function RandomSong() {
               </motion.h2>
 
               {/* Card */}
-              <div className="relative bg-white rounded-[16px] p-6 shadow-md w-full max-w-sm mx-auto overflow-hidden text-center">
+              <div className="relative bg-white rounded-[16px] px-0 py-6 shadow-md w-full max-w-sm mx-auto overflow-hidden text-center">
                 {/* Rotating CD */}
                 <div className="flex justify-center">
                   <motion.div
