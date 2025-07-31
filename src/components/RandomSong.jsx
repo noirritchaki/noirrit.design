@@ -5,6 +5,7 @@ import GoBack from "./GoBack";
 import aboutme from "../assets/about-me.svg";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import CDImage from "../assets/CD-image.png";
 
 export default function RandomSong() {
   const [song, setSong] = useState(null);
@@ -101,11 +102,24 @@ export default function RandomSong() {
               >
                 here’s a recommendation from my playlists :)
               </motion.h2>
-              <img
-                src={song.albumImage}
-                alt="album"
-                className="w-20 h-20 rounded-xl shadow-lg object-cover"
-              />
+              <motion.div
+                animate={{ rotate: 360 }}
+                transition={{ repeat: Infinity, duration: 8, ease: "linear" }}
+                className="relative w-40 h-40 rounded-full"
+              >
+                {/* Album Art */}
+                <img
+                  src={song.albumImage}
+                  alt="album"
+                  className="w-full h-full object-cover rounded-full"
+                />
+                {/* CD Overlay */}
+                <img
+                  src={CDImage}
+                  alt="cd-overlay"
+                  className="absolute top-0 left-0 w-full h-full object-cover pointer-events-none"
+                />
+              </motion.div>
               <a
                 href={song.songUrl}
                 target="_blank"
