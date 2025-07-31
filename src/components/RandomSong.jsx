@@ -118,7 +118,7 @@ export default function RandomSong() {
                   <img
                     src={CDImage}
                     alt="cd-overlay"
-                    className="absolute top-0 left-0 w-full h-full object-cover pointer-events-none translate-x-[-3px] translate-y-[-2px]"
+                    className="absolute top-0 left-0 w-full h-full object-cover pointer-events-none translate-x-[-3px] translate-y-[0px]"
                   />
                 </div>
               </motion.div>
