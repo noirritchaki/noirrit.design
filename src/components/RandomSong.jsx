@@ -93,7 +93,7 @@ export default function RandomSong() {
               </div>
 
               {/* Skeleton Card */}
-              <div className="relative bg-white rounded-[16px] px-0 py-6 shadow-sm w-full max-w-sm mx-auto overflow-hidden text-center animate-pulse">
+              <div className="relative bg-white rounded-[16px] px-0 py-8 shadow-md w-full max-w-sm mx-auto overflow-hidden text-center animate-pulse">
                 {/* Spinning CD Placeholder */}
                 <div className="flex justify-center">
                   <div className="w-60 h-60 -mt-40 bg-gray-200 rounded-full" />
