@@ -105,7 +105,7 @@ export default function RandomSong() {
               <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ repeat: Infinity, duration: 8, ease: "linear" }}
-                className="relative w-40 h-40 rounded-full"
+                className="relative w-40 h-40 rounded-full overflow-hidden"
               >
                 {/* Album Art */}
                 <img
