@@ -108,7 +108,17 @@ export default function RandomSong() {
                 </div>
               </motion.div>
 
-              <h3 className="text-[20px] font-semibold text-[#182230] mt-20">
+              {/* Recommendation Title */}
+              <motion.h2
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, ease: "easeOut", delay: 0.3 }}
+                className="text-[14px] text-[#667085] mt-20 mb-3"
+              >
+                here’s a recommendation from my playlists :)
+              </motion.h2>
+
+              <h3 className="text-[20px] font-semibold text-[#182230]">
                 {song.title}
               </h3>
               <p className="text-[14px] text-[#667085]">{song.artist}</p>
