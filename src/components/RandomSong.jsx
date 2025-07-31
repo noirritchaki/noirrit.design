@@ -100,7 +100,7 @@ export default function RandomSong() {
                 </div>
 
                 {/* Song Title Placeholder */}
-                <div className="h-4 w-32 bg-gray-300 rounded mx-auto mt-6" />
+                <div className="h-4 w-32 bg-gray-300 rounded mx-auto mt-10" />
 
                 {/* Artist Placeholder */}
                 <div className="h-3 w-48 bg-gray-200 rounded mx-auto mt-1" />
