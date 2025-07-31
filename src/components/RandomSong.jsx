@@ -107,11 +107,13 @@ export default function RandomSong() {
                   className="absolute -top-20 left-1/2 transform -translate-x-1/2 w-40 h-40"
                 >
                   <div className="relative w-full h-full">
+                    {/* Album Image */}
                     <img
                       src={song.albumImage}
                       alt="album"
-                      className="absolute top-1/2 left-1/2 w-[130px] h-[130px] object-cover rounded-full -translate-x-1/2 -translate-y-1/2"
+                      className="w-full h-full object-cover rounded-full"
                     />
+                    {/* CD Overlay */}
                     <img
                       src={CDImage}
                       alt="cd-overlay"
