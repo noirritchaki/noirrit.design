@@ -107,7 +107,7 @@ export default function RandomSong() {
                 transition={{ repeat: Infinity, duration: 8, ease: "linear" }}
                 className="relative w-44 h-44 rounded-full overflow-hidden"
               >
-                <div className="relative w-[180px] h-[180px]">
+                <div className="relative w-[180px] h-[180px] flex items-center justify-center">
                   {/* Album Art */}
                   <img
                     src={song.albumImage}
@@ -118,7 +118,7 @@ export default function RandomSong() {
                   <img
                     src={CDImage}
                     alt="cd-overlay"
-                    className="absolute top-0 left-0 w-full h-full object-cover pointer-events-none translate-x-[-3px] translate-y-[0px]"
+                    className="absolute top-0 left-0 w-full h-full object-cover pointer-events-none"
                   />
                 </div>
               </motion.div>
