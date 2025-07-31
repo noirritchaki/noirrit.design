@@ -99,7 +99,7 @@ export default function RandomSong() {
               </motion.h2>
 
               {/* Card */}
-              <div className="relative bg-white rounded-[32px] px-8 pt-8 pb-12 shadow-md w-full max-w-sm mx-auto overflow-hidden text-center">
+              <div className="relative bg-white rounded-[16px] px-5 pt-8 pb-5 shadow-md w-full max-w-sm mx-auto overflow-hidden text-center">
                 {/* Rotating CD */}
                 <div className="flex justify-center">
                   <motion.div
@@ -109,7 +109,7 @@ export default function RandomSong() {
                       duration: 8,
                       ease: "linear",
                     }}
-                    className="w-40 h-40 -mt-28"
+                    className="w-64 h-64 -mt-40"
                   >
                     <div className="relative w-full h-full">
                       {/* Album Image */}
@@ -128,9 +128,14 @@ export default function RandomSong() {
                   </motion.div>
                 </div>
 
-                <h3 className="text-[16px] font-semibold text-[#182230] mt-4">
+                <a
+                  href={song.songUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[16px] font-semibold text-[#182230] mt-4 block hover:underline"
+                >
                   {song.title}
-                </h3>
+                </a>
                 <p className="text-[14px] text-[#667085]">{song.artist}</p>
 
                 {song.playlist && (
