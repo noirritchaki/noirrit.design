@@ -23,6 +23,7 @@ import ConnectImage from "../assets/connect-image.png";
 import SongRec from "../assets/song-rec.png";
 import EQ from "../assets/eq.png";
 import Gym from "../assets/gym.png";
+import AnimatedWord from "./AnimatedWord";
 
 // https://jet2holiday.vercel.app/api/currently-playing
 
@@ -73,6 +74,12 @@ const Navbar = () => {
                   >
                     about
                   </Link>
+                  {/* <Link to="/about">
+                    <AnimatedWord
+                      word="about"
+                      className="text-sm text-[#667085] font-normal"
+                    />
+                  </Link> */}
                 </a>
                 <a alt="connect" aria-label="Go to connect">
                   <Link
@@ -82,6 +89,12 @@ const Navbar = () => {
                   >
                     connect
                   </Link>
+                  {/* <Link to="/connect">
+                    <AnimatedWord
+                      word="connect"
+                      className="text-sm text-[#667085] font-normal"
+                    />
+                  </Link> */}
                 </a>
                 <a alt="resume" aria-label="Go to resume">
                   <Link
@@ -93,6 +106,16 @@ const Navbar = () => {
                   >
                     resume
                   </Link>
+                  {/* <Link
+                    to="https://read.cv/noirrit"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <AnimatedWord
+                      word="resume"
+                      className="text-sm text-[#667085] font-normal"
+                    />
+                  </Link> */}
                 </a>
               </div>
             </div>
