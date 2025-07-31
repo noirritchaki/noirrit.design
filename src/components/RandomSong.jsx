@@ -52,35 +52,29 @@ export default function RandomSong() {
               />
             </a>
             <div className="flex flex-row gap-4">
-              <a alt="about" aria-label="Go to about">
-                <Link
-                  to="/about"
-                  className="inline font-normal underline-offset-2 hover:underline decoration-[#D0D5DD]"
-                  style={{ fontSize: "14px", color: "#667085" }}
-                >
-                  about
-                </Link>
-              </a>
-              <a alt="connect" aria-label="Go to connect">
-                <Link
-                  to="/connect"
-                  className="inline font-normal underline-offset-2 hover:underline decoration-[#D0D5DD]"
-                  style={{ fontSize: "14px", color: "#667085" }}
-                >
-                  connect
-                </Link>
-              </a>
-              <a alt="resume" aria-label="Go to resume">
-                <Link
-                  to="https://read.cv/noirrit"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline font-normal underline-offset-2 hover:underline decoration-[#D0D5DD]"
-                  style={{ fontSize: "14px", color: "#667085" }}
-                >
-                  resume
-                </Link>
-              </a>
+              <Link
+                to="/about"
+                className="inline font-normal underline-offset-2 hover:underline decoration-[#D0D5DD]"
+                style={{ fontSize: "14px", color: "#667085" }}
+              >
+                about
+              </Link>
+              <Link
+                to="/connect"
+                className="inline font-normal underline-offset-2 hover:underline decoration-[#D0D5DD]"
+                style={{ fontSize: "14px", color: "#667085" }}
+              >
+                connect
+              </Link>
+              <Link
+                to="https://read.cv/noirrit"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline font-normal underline-offset-2 hover:underline decoration-[#D0D5DD]"
+                style={{ fontSize: "14px", color: "#667085" }}
+              >
+                resume
+              </Link>
             </div>
           </div>
 
@@ -93,64 +87,38 @@ export default function RandomSong() {
               <div className="w-32 h-3 bg-gray-100 rounded mt-4" />
             </div>
           ) : (
-            <div className="flex flex-col items-center gap-1 mt-12 text-center">
-              <motion.h2
-                initial={{ opacity: 0, y: -10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, ease: "easeOut", delay: 0.3 }}
-                className="text-[14px] text-[#667085] mb-6"
-              >
-                here’s a recommendation from my playlists :)
-              </motion.h2>
+            <div className="bg-white rounded-[32px] px-8 pt-24 pb-12 shadow-md w-full max-w-sm mx-auto relative overflow-hidden text-center">
+              {/* Rotating CD */}
               <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ repeat: Infinity, duration: 8, ease: "linear" }}
-                className="relative w-44 h-44 rounded-full overflow-hidden"
+                className="absolute -top-20 left-1/2 transform -translate-x-1/2 w-40 h-40"
               >
-                <div className="relative w-[180px] h-[180px] flex items-center justify-center">
-                  {/* Album Art */}
+                <div className="relative w-full h-full flex items-center justify-center">
                   <img
                     src={song.albumImage}
                     alt="album"
-                    className="w-full h-full object-cover rounded-full scale-[0.83]"
+                    className="w-[130px] h-[130px] object-cover rounded-full"
                   />
-                  {/* CD Overlay */}
                   <img
                     src={CDImage}
                     alt="cd-overlay"
-                    className="absolute top-0 left-0 w-full h-full object-cover pointer-events-none"
+                    className="absolute top-0 left-0 w-full h-full pointer-events-none shadow-md"
                   />
                 </div>
               </motion.div>
-              <a
-                href={song.songUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[16px] font-medium text-[#182230] hover:underline transition-colors mt-4"
-              >
+
+              <h3 className="text-[20px] font-semibold text-[#182230] mt-20">
                 {song.title}
-              </a>
+              </h3>
               <p className="text-[14px] text-[#667085]">{song.artist}</p>
 
-              {/* {song.previewUrl ? (
-                <audio
-                  controls
-                  src={song.previewUrl}
-                  className="mt-4 w-full max-w-xs"
-                >
-                  Your browser does not support the audio element.
-                </audio>
-              ) : (
-                <p className="text-[12px] text-gray-400 italic mt-4">
-                  no preview available
-                </p>
-              )} */}
               {song.playlist && (
                 <a
                   href={song.playlistUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[14px] text-gray-400 italic flex items-center gap-1 hover:underline mt-4"
+                  className="text-[14px] text-gray-400 italic flex items-center justify-center gap-1 hover:underline mt-4"
                 >
                   from{" "}
                   <img
