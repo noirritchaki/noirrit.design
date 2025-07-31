@@ -111,7 +111,7 @@ export default function RandomSong() {
                 <img
                   src={song.albumImage}
                   alt="album"
-                  className="w-full h-full object-cover rounded-full scale-[0.80]"
+                  className="w-full h-full object-cover rounded-full scale-[0.83]"
                 />
                 {/* CD Overlay */}
                 <img
