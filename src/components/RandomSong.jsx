@@ -96,11 +96,11 @@ export default function RandomSong() {
               <div className="relative bg-white rounded-[16px] px-0 py-8 shadow-md w-full max-w-sm mx-auto overflow-hidden text-center animate-pulse">
                 {/* Spinning CD Placeholder */}
                 <div className="flex justify-center">
-                  <div className="w-56 h-56 -mt-36 bg-gray-200 rounded-full" />
+                  <div className="w-56 h-56 -mt-40 bg-gray-200 rounded-full" />
                 </div>
 
                 {/* Song Title Placeholder */}
-                <div className="h-4 w-32 bg-gray-300 rounded mx-auto mt-10" />
+                <div className="h-4 w-32 bg-gray-300 rounded mx-auto mt-8" />
 
                 {/* Artist Placeholder */}
                 <div className="h-3 w-48 bg-gray-200 rounded mx-auto mt-1" />
