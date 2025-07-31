@@ -143,7 +143,7 @@ export default function RandomSong() {
                     href={song.playlistUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[14px] text-gray-400 italic inline-flex items-center justify-center gap-1 hover:underline mt-4"
+                    className="text-[14px] text-gray-400 italic inline-block items-center justify-center gap-1 hover:underline mt-4"
                   >
                     from{" "}
                     <img
