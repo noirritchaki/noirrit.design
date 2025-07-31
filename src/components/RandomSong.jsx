@@ -101,7 +101,7 @@ export default function RandomSong() {
               {/* Card */}
               <div className="relative bg-white rounded-[32px] px-8 pt-24 pb-12 shadow-md w-full max-w-sm mx-auto overflow-hidden text-center">
                 {/* Rotating CD */}
-                <div className="flex justify-center relative">
+                <div className="flex justify-center">
                   <motion.div
                     animate={{ rotate: 360 }}
                     transition={{
@@ -109,14 +109,14 @@ export default function RandomSong() {
                       duration: 8,
                       ease: "linear",
                     }}
-                    className="w-40 h-40 -mt-20"
+                    className="w-40 h-40 -mt-28"
                   >
                     <div className="relative w-full h-full">
                       {/* Album Image */}
                       <img
                         src={song.albumImage}
                         alt="album"
-                        className="w-full h-full object-cover rounded-full scale-[0.86]"
+                        className="w-full h-full object-cover rounded-full scale-[0.83]"
                       />
                       {/* CD Overlay */}
                       <img
@@ -128,7 +128,7 @@ export default function RandomSong() {
                   </motion.div>
                 </div>
 
-                <h3 className="text-[20px] font-semibold text-[#182230] mt-20">
+                <h3 className="text-[16px] font-semibold text-[#182230] mt-4">
                   {song.title}
                 </h3>
                 <p className="text-[14px] text-[#667085]">{song.artist}</p>
