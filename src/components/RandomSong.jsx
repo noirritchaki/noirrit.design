@@ -87,58 +87,61 @@ export default function RandomSong() {
               <div className="w-32 h-3 bg-gray-100 rounded mt-4" />
             </div>
           ) : (
-            <div className="bg-white rounded-[32px] px-8 pt-24 pb-12 shadow-md w-full max-w-sm mx-auto relative overflow-hidden text-center">
-              {/* Rotating CD */}
-              <motion.div
-                animate={{ rotate: 360 }}
-                transition={{ repeat: Infinity, duration: 8, ease: "linear" }}
-                className="absolute -top-20 left-1/2 transform -translate-x-1/2 w-40 h-40"
-              >
-                <div className="relative w-full h-full flex items-center justify-center">
-                  <img
-                    src={song.albumImage}
-                    alt="album"
-                    className="w-[130px] h-[130px] object-cover rounded-full"
-                  />
-                  <img
-                    src={CDImage}
-                    alt="cd-overlay"
-                    className="absolute top-0 left-0 w-full h-full pointer-events-none shadow-md"
-                  />
-                </div>
-              </motion.div>
-
+            <div className="flex flex-col items-center">
               {/* Recommendation Title */}
               <motion.h2
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, ease: "easeOut", delay: 0.3 }}
-                className="text-[14px] text-[#667085] mt-20 mb-3"
+                className="text-[14px] text-[#667085] mb-6 text-center"
               >
                 here’s a recommendation from my playlists :)
               </motion.h2>
 
-              <h3 className="text-[20px] font-semibold text-[#182230]">
-                {song.title}
-              </h3>
-              <p className="text-[14px] text-[#667085]">{song.artist}</p>
-
-              {song.playlist && (
-                <a
-                  href={song.playlistUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[14px] text-gray-400 italic flex items-center justify-center gap-1 hover:underline mt-4"
+              {/* Card */}
+              <div className="bg-white rounded-[32px] px-8 pt-24 pb-12 shadow-md w-full max-w-sm mx-auto relative overflow-hidden text-center">
+                {/* Rotating CD */}
+                <motion.div
+                  animate={{ rotate: 360 }}
+                  transition={{ repeat: Infinity, duration: 8, ease: "linear" }}
+                  className="absolute -top-10 -right-10 w-40 h-40 rotate-[45deg]"
                 >
-                  from{" "}
-                  <img
-                    src={song.playlistImage}
-                    alt="playlist"
-                    className="w-4 h-4 rounded-sm object-cover"
-                  />
-                  {song.playlist}
-                </a>
-              )}
+                  <div className="relative w-full h-full">
+                    <img
+                      src={song.albumImage}
+                      alt="album"
+                      className="absolute top-1/2 left-1/2 w-[130px] h-[130px] object-cover rounded-full -translate-x-1/2 -translate-y-1/2"
+                    />
+                    <img
+                      src={CDImage}
+                      alt="cd-overlay"
+                      className="absolute top-0 left-0 w-full h-full pointer-events-none shadow-md"
+                    />
+                  </div>
+                </motion.div>
+
+                <h3 className="text-[20px] font-semibold text-[#182230] mt-20">
+                  {song.title}
+                </h3>
+                <p className="text-[14px] text-[#667085]">{song.artist}</p>
+
+                {song.playlist && (
+                  <a
+                    href={song.playlistUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[14px] text-gray-400 italic flex items-center justify-center gap-1 hover:underline mt-4"
+                  >
+                    from{" "}
+                    <img
+                      src={song.playlistImage}
+                      alt="playlist"
+                      className="w-4 h-4 rounded-sm object-cover"
+                    />
+                    {song.playlist}
+                  </a>
+                )}
+              </div>
             </div>
           )}
         </div>
