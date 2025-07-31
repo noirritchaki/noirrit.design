@@ -101,26 +101,32 @@ export default function RandomSong() {
               {/* Card */}
               <div className="relative bg-white rounded-[32px] px-8 pt-24 pb-12 shadow-md w-full max-w-sm mx-auto overflow-hidden text-center">
                 {/* Rotating CD */}
-                <motion.div
-                  animate={{ rotate: 360 }}
-                  transition={{ repeat: Infinity, duration: 8, ease: "linear" }}
-                  className="absolute -top-20 left-1/2 transform -translate-x-1/2 w-40 h-40"
-                >
-                  <div className="relative w-full h-full">
-                    {/* Album Image */}
-                    <img
-                      src={song.albumImage}
-                      alt="album"
-                      className="w-full h-full object-cover rounded-full"
-                    />
-                    {/* CD Overlay */}
-                    <img
-                      src={CDImage}
-                      alt="cd-overlay"
-                      className="absolute top-0 left-0 w-full h-full pointer-events-none"
-                    />
-                  </div>
-                </motion.div>
+                <div className="flex justify-center relative">
+                  <motion.div
+                    animate={{ rotate: 360 }}
+                    transition={{
+                      repeat: Infinity,
+                      duration: 8,
+                      ease: "linear",
+                    }}
+                    className="w-40 h-40 -mt-20"
+                  >
+                    <div className="relative w-full h-full">
+                      {/* Album Image */}
+                      <img
+                        src={song.albumImage}
+                        alt="album"
+                        className="w-full h-full object-cover rounded-full scale-[0.86]"
+                      />
+                      {/* CD Overlay */}
+                      <img
+                        src={CDImage}
+                        alt="cd-overlay"
+                        className="absolute top-0 left-0 w-full h-full pointer-events-none"
+                      />
+                    </div>
+                  </motion.div>
+                </div>
 
                 <h3 className="text-[20px] font-semibold text-[#182230] mt-20">
                   {song.title}
