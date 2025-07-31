@@ -132,13 +132,11 @@ export default function RandomSong() {
                   href={song.songUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[16px] inline-flex font-medium text-[#182230] mt-4 hover:underline"
+                  className="text-[16px] font-medium text-[#182230] mt-4 inline-block hover:underline"
                 >
                   {song.title}
                 </a>
-                <p className="text-[14px] inline-flex text-[#667085]">
-                  {song.artist}
-                </p>
+                <p className="text-[14px] text-[#667085]">{song.artist}</p>
 
                 {song.playlist && (
                   <a
