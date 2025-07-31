@@ -99,7 +99,7 @@ export default function RandomSong() {
               </motion.h2>
 
               {/* Card */}
-              <div className="relative bg-white rounded-[16px] px-0 py-6 shadow-md w-full max-w-sm mx-auto overflow-hidden text-center">
+              <div className="relative bg-white rounded-[16px] px-0 py-6 shadow-sm w-full max-w-sm mx-auto overflow-hidden text-center">
                 {/* Rotating CD */}
                 <div className="flex justify-center">
                   <motion.div
@@ -143,7 +143,7 @@ export default function RandomSong() {
                     href={song.playlistUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[14px] text-gray-400 italic flex items-center justify-center gap-1 hover:underline mt-4"
+                    className="text-[14px] text-gray-400 italic inline-flex items-center justify-center gap-1 hover:underline mt-4"
                   >
                     from{" "}
                     <img
