@@ -80,11 +80,31 @@ export default function RandomSong() {
 
           {/* Song Display */}
           {!song ? (
-            <div className="flex flex-col items-center gap-2 mt-[104px] text-center animate-pulse">
-              <div className="w-20 h-20 rounded-xl bg-gray-300" />
-              <div className="w-40 h-4 bg-gray-300 rounded mt-4" />
-              <div className="w-24 h-3 bg-gray-200 rounded mt-2" />
-              <div className="w-32 h-3 bg-gray-100 rounded mt-4" />
+            <div className="flex flex-col items-center mt-8">
+              {/* Recommendation Title */}
+              <div className="text-[14px] text-[#667085] mb-6 text-center">
+                here’s a recommendation from my playlists :)
+              </div>
+
+              {/* Skeleton Card */}
+              <div className="relative bg-white rounded-[16px] px-0 py-6 shadow-sm w-full max-w-sm mx-auto overflow-hidden text-center animate-pulse">
+                {/* Spinning CD Placeholder */}
+                <div className="flex justify-center">
+                  <div className="w-64 h-64 -mt-40 bg-gray-200 rounded-full" />
+                </div>
+
+                {/* Song Title Placeholder */}
+                <div className="h-4 w-32 bg-gray-300 rounded mx-auto mt-6" />
+
+                {/* Artist Placeholder */}
+                <div className="h-3 w-48 bg-gray-200 rounded mx-auto mt-3" />
+
+                {/* Playlist Placeholder */}
+                <div className="flex items-center justify-center gap-2 mt-4">
+                  <div className="h-4 w-4 bg-gray-200 rounded-sm" />
+                  <div className="h-3 w-24 bg-gray-100 rounded" />
+                </div>
+              </div>
             </div>
           ) : (
             <div className="flex flex-col items-center mt-8">
@@ -99,7 +119,7 @@ export default function RandomSong() {
               </motion.h2>
 
               {/* Card */}
-              <div className="relative bg-white rounded-[16px] px-0 py-6 shadow-sm w-full max-w-sm mx-auto overflow-hidden text-center">
+              <div className="relative bg-white rounded-[16px] px-0 py-6 shadow-md w-full max-w-sm mx-auto overflow-hidden text-center">
                 {/* Rotating CD */}
                 <div className="flex justify-center">
                   <motion.div
