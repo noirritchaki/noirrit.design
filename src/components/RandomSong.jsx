@@ -99,12 +99,12 @@ export default function RandomSong() {
               </motion.h2>
 
               {/* Card */}
-              <div className="bg-white rounded-[32px] px-8 pt-24 pb-12 shadow-md w-full max-w-sm mx-auto relative overflow-hidden text-center">
+              <div className="relative bg-white rounded-[32px] px-8 pt-24 pb-12 shadow-md w-full max-w-sm mx-auto overflow-hidden text-center">
                 {/* Rotating CD */}
                 <motion.div
                   animate={{ rotate: 360 }}
                   transition={{ repeat: Infinity, duration: 8, ease: "linear" }}
-                  className="absolute -top-10 -right-10 w-40 h-40 rotate-[45deg]"
+                  className="absolute -top-20 left-1/2 transform -translate-x-1/2 w-40 h-40"
                 >
                   <div className="relative w-full h-full">
                     <img
@@ -115,7 +115,7 @@ export default function RandomSong() {
                     <img
                       src={CDImage}
                       alt="cd-overlay"
-                      className="absolute top-0 left-0 w-full h-full pointer-events-none shadow-md"
+                      className="absolute top-0 left-0 w-full h-full pointer-events-none"
                     />
                   </div>
                 </motion.div>
