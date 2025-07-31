@@ -107,18 +107,20 @@ export default function RandomSong() {
                 transition={{ repeat: Infinity, duration: 8, ease: "linear" }}
                 className="relative w-44 h-44 rounded-full overflow-hidden"
               >
-                {/* Album Art */}
-                <img
-                  src={song.albumImage}
-                  alt="album"
-                  className="w-full h-full object-cover rounded-full scale-[0.83]"
-                />
-                {/* CD Overlay */}
-                <img
-                  src={CDImage}
-                  alt="cd-overlay"
-                  className="absolute top-0 left-0 w-full h-full object-cover pointer-events-none"
-                />
+                <div className="relative w-[180px] h-[180px]">
+                  {/* Album Art */}
+                  <img
+                    src={song.albumImage}
+                    alt="album"
+                    className="w-full h-full object-cover rounded-full scale-[0.83]"
+                  />
+                  {/* CD Overlay */}
+                  <img
+                    src={CDImage}
+                    alt="cd-overlay"
+                    className="absolute top-0 left-0 w-full h-full object-cover pointer-events-none"
+                  />
+                </div>
               </motion.div>
               <a
                 href={song.songUrl}
