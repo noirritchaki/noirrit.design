@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import BubbleTail from "../assets/bubble-tail.svg";
 import { fetchSong } from "../services";
 import MusicAnimation from "../assets/music-animation.json";
@@ -20,18 +20,17 @@ export default function CurrentlyPlaying() {
   const [song, setSong] = useState(null);
 
   useEffect(() => {
-    // (async () => {
     const getSong = async () => {
-      const data = await fetchSong(); //this is defined in services/index.js
+      const data = await fetchSong();
       setSong(data);
     };
 
-    getSong(); //fetching the song again
+    getSong();
 
-    // const interval = setInterval(fetchSong, 20000);
     const interval = setInterval(() => {
       getSong();
     }, 20000);
+
     return () => clearInterval(interval);
   }, []);
 
@@ -78,25 +77,38 @@ export default function CurrentlyPlaying() {
               alt={song.title}
               className="w-10 h-10 rounded-md shadow-md"
             />
+
+            {/* Animated text block */}
             <div className="flex flex-col overflow-hidden">
-              <a
-                href={song.songUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[12px] text-[#182230] font-medium truncate hover:underline"
-              >
-                {song.title}
-              </a>
-              <span className="text-[10px] text-gray-500 truncate">
-                {song.artist}
-              </span>
-              <span className="text-[10px] text-gray-400 truncate">
-                {song.album}
-              </span>
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={song.songUrl}
+                  initial={{ opacity: 0, y: 6 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -6 }}
+                  transition={{ duration: 0.3 }}
+                  className="flex flex-col overflow-hidden"
+                >
+                  <a
+                    href={song.songUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[12px] text-[#182230] font-medium truncate hover:underline"
+                  >
+                    {song.title}
+                  </a>
+                  <span className="text-[10px] text-gray-500 truncate">
+                    {song.artist}
+                  </span>
+                  <span className="text-[10px] text-gray-400 truncate">
+                    {song.album}
+                  </span>
+                </motion.div>
+              </AnimatePresence>
             </div>
           </div>
 
-          {/* Right section: lottie or playedAt */}
+          {/* Right section: animation or playedAt */}
           <div className="ml-2 flex-shrink-0">
             {song.isPlaying ? (
               <div className="w-8 h-8">
