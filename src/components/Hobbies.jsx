@@ -49,20 +49,30 @@ const Hobbies = ({ image, title, subtitle, videoUrl }) => {
             transition={{ duration: 0.3, ease: easeInOut }}
             onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside modal
           >
-            <video
-              ref={videoRef}
-              autoPlay
-              className="h-[600px] w-auto max-w-[90]"
-              onClick={() => {
-                if (videoRef.current.paused) {
-                  videoRef.current.play();
-                } else {
-                  videoRef.current.pause();
-                }
-              }}
-            >
-              <source src={videoUrl} type="video/mp4" />
-            </video>
+            {videoUrl ? (
+              <video
+                ref={videoRef}
+                autoPlay
+                className="h-[600px] w-auto max-w-[90]"
+                onClick={() => {
+                  if (videoRef.current.paused) {
+                    videoRef.current.play();
+                  } else {
+                    videoRef.current.pause();
+                  }
+                }}
+              >
+                <source src={videoUrl} type="video/mp4" />
+              </video>
+            ) : (
+              //if i dont have a video ill open the image itself
+              <img
+                src={image}
+                alt={title}
+                //className="max-h-[80vh] max-w-[90vw] rounded-lg shadow-lg object-contain"
+                className="h-[600px] w-auto max-w-[90]"
+              />
+            )}
           </motion.div>
         </motion.div>
       )}
