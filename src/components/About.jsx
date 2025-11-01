@@ -34,9 +34,15 @@ import NoTime from "../assets/out-of-time.png";
 import Sloper from "../assets/sloper.png";
 import RedFrog from "../assets/red-frog.png";
 import Surfin from "../assets/surfin.JPG";
+import BatHang from "../assets/bat-hang.png";
 
 const About = () => {
   const hobbies = [
+    {
+      image: BatHang,
+      title: "Bat Hang",
+      videoUrl: "/videos/bat-hang.mov",
+    },
     {
       image: RedFrog,
       title: "Red Frog",
