@@ -44,7 +44,7 @@ const About = () => {
     },
     {
       image: Surfin,
-      title: "Surfin'",
+      title: "Surfing",
       // videoUrl: "/videos/red-frog.mov",
     },
     {
