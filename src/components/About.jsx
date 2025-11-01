@@ -28,9 +28,45 @@ import CurrentlyPlaying from "./CurrentlyPlaying";
 import BigPinch from "../assets/big-pinch.png";
 import BumpIt from "../assets/bump-it.png";
 import YellowRanger from "../assets/yellow-ranger.png";
+import Fall from "../assets/fall.png";
+import DynoThunder from "../assets/dyno-thunder.png";
+import NoTime from "../assets/out-of-time.png";
+import Sloper from "../assets/sloper.png";
+import RedFrog from "../assets/red-frog.png";
+import Surfin from "../assets/surfin.JPG";
 
 const About = () => {
   const hobbies = [
+    {
+      image: RedFrog,
+      title: "Red Frog",
+      videoUrl: "/videos/red-frog.mov",
+    },
+    {
+      image: Surfin,
+      title: "Surfin'",
+      // videoUrl: "/videos/red-frog.mov",
+    },
+    {
+      image: Sloper,
+      title: "Sloper",
+      videoUrl: "/videos/sloper.MP4",
+    },
+    {
+      image: NoTime,
+      title: "Out Of Time",
+      videoUrl: "/videos/out-of-time.mov",
+    },
+    {
+      image: DynoThunder,
+      title: "Dyno Thunder",
+      videoUrl: "/videos/dyno-thunder.mov",
+    },
+    {
+      image: Fall,
+      title: "Fall",
+      videoUrl: "/videos/fall.mov",
+    },
     {
       image: BumpIt,
       title: "Bump It",
@@ -197,13 +233,13 @@ const About = () => {
                 <div className="flex flex-col pb-2">
                   <h2
                     className="inline font-medium"
-                    style={{ fontSize: "20px" }}
+                    style={{ fontSize: "16px" }}
                   >
                     hi! i'm noirrit
                   </h2>
                   <p
-                    className="inline font-light text-zinc-400"
-                    style={{ fontSize: "14px" }}
+                    className="inline font-light text-[#667085]"
+                    style={{ fontSize: "12px" }}
                   >
                     / noy-rith /
                   </p>
@@ -236,7 +272,7 @@ const About = () => {
                           fontSize: "14px",
                           // minWidth: "24px",
                           textAlign: "right",
-                          lineHeight: "1.8",
+                          lineHeight: "1.6",
                         }}
                       >
                         1.
@@ -246,14 +282,14 @@ const About = () => {
                       <div className="flex-1">
                         <h2
                           className="font-regular text-[#667085]"
-                          style={{ fontSize: "16px" }}
+                          style={{ fontSize: "14px" }}
                         >
                           i design with purpose
                         </h2>
                         <p
                           className="text-[#667085]"
                           style={{
-                            fontSize: "16px",
+                            fontSize: "14px",
                             lineHeight: "1.6",
                             paddingTop: "4px",
                           }}
@@ -273,7 +309,7 @@ const About = () => {
                           fontSize: "14px",
                           // minWidth: "24px",
                           textAlign: "right",
-                          lineHeight: "1.8",
+                          lineHeight: "1.6",
                         }}
                       >
                         2.
@@ -281,21 +317,22 @@ const About = () => {
                       <div className="flex-1">
                         <h2
                           className="font-regular text-[#667085]"
-                          style={{ fontSize: "16px" }}
+                          style={{ fontSize: "14px" }}
                         >
                           a little obsessed (in the best way)
                         </h2>
                         <p
                           className="text-[#667085]"
                           style={{
-                            fontSize: "16px",
+                            fontSize: "14px",
                             lineHeight: "1.6",
                             paddingTop: "4px",
                           }}
                         >
                           i love diving into new things. right now it’s rock
                           climbing, equal parts thrill and bruises, but always
-                          worth it.
+                          worth it. i even tried my hand at surfing - easily the
+                          best thing i've tried this year.
                         </p>
                       </div>
                     </div>
@@ -308,7 +345,7 @@ const About = () => {
                           fontSize: "14px",
                           // minWidth: "24px",
                           textAlign: "right",
-                          lineHeight: "1.8",
+                          lineHeight: "1.6",
                         }}
                       >
                         3.
@@ -316,14 +353,14 @@ const About = () => {
                       <div className="flex-1">
                         <h2
                           className="font-regular text-[#667085]"
-                          style={{ fontSize: "16px" }}
+                          style={{ fontSize: "14px" }}
                         >
                           side quests keep me sane
                         </h2>
                         <p
                           className="text-[#667085]"
                           style={{
-                            fontSize: "16px",
+                            fontSize: "14px",
                             lineHeight: "1.6",
                             paddingTop: "4px",
                           }}

@@ -13,19 +13,19 @@ const WorkLink = ({ showcase, title, year }) => {
       <motion.div className="relative">
         <a
           href="#"
-          className="relative p-4 w-full md:max-w-[512px] transition-all duration-300 inline-flex flex-col gap-1 py-2 no-underline text-black"
+          className="relative p-4 w-full md:max-w-[512px] transition-all duration-300 inline-flex flex-col gap-1 py-2 no-underline !text-[#182230]"
         >
           <motion.span
-            className="underline decoration-zinc-100 underline-offset-2 cursor-pointer"
-            initial={{ color: "#333" }}
-            whileHover={{ color: "#000", transition: { duration: 0.2 } }}
+            className="text-sm font-normal underline decoration-[#667085] underline-offset-2 cursor-pointer"
+            initial={{ color: "#182230" }}
+            whileHover={{ color: "#182230", transition: { duration: 0.2 } }}
           >
             {title}
           </motion.span>
           <motion.span
-            className="text-sm font-normal text-zinc-400"
-            initial={{ color: "#888" }}
-            whileHover={{ color: "#444", transition: { duration: 0.2 } }}
+            className="text-sm font-light text-zinc-400"
+            initial={{ color: "#667085" }}
+            whileHover={{ color: "#667085", transition: { duration: 0.2 } }}
           >
             {year}
           </motion.span>

@@ -24,6 +24,7 @@ import SongRec from "../assets/song-rec.png";
 import EQ from "../assets/eq.png";
 import Gym from "../assets/gym.png";
 import AnimatedWord from "./AnimatedWord";
+import Traffic from "../assets/Traffic.jpg";
 
 // https://jet2holiday.vercel.app/api/currently-playing
 
@@ -121,7 +122,7 @@ const Navbar = () => {
             </div>
           </div>
           <motion.div
-            className="flex flex-col gap-16 origin-left"
+            className="flex flex-col gap-12 origin-left"
             initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
@@ -130,13 +131,13 @@ const Navbar = () => {
               <div className="flex flex-col gap-0 w-fit">
                 <h1
                   className="inline font-medium"
-                  style={{ fontSize: "20px", color: "#182230" }}
+                  style={{ fontSize: "16px", color: "#182230" }}
                 >
                   noirrit chaki
                 </h1>
                 <h2
                   className="font-normal flex flex-row gap-2 items-center"
-                  style={{ fontSize: "16px", color: "#667085" }}
+                  style={{ fontSize: "14px", color: "#667085" }}
                 >
                   <span>product designer at </span>
                   <LinkPreview url={"https://www.plumhq.com/"} isExternal>
@@ -182,10 +183,10 @@ const Navbar = () => {
             <div className="flex flex-col gap-6">
               <h1
                 className="inline font-regular leading-normal max-w-[500px]"
-                style={{ fontSize: "16px", color: "#667085" }}
+                style={{ fontSize: "14px", color: "#667085" }}
               >
                 {" "}
-                hello hello! welcome to my digital canvas.{" "}
+                hello hello! welcome to my digital playground.{" "}
                 {/* <span
                   className="inline font-medium"
                   style={{ color: "#182230" }}
@@ -193,12 +194,12 @@ const Navbar = () => {
                   {" "}
                   digital canvas.{" "}
                 </span> */}
-                i build things that make people go <em>“oh, nice!”</em>, and
+                i design stuff that make people go <em>“oh, nice!”</em>, and
                 right now i’m crafting experiences at Plum.
               </h1>
               <h1
                 className="inline font-regular leading-normal max-w-[500px]"
-                style={{ fontSize: "16px", color: "#667085" }}
+                style={{ fontSize: "14px", color: "#667085" }}
               >
                 you can check out my{" "}
                 <LinkPreview
@@ -240,7 +241,7 @@ const Navbar = () => {
               </h1>
               <h1
                 className="inline font-regular leading-normal max-w-[500px]"
-                style={{ fontSize: "16px", color: "#667085" }}
+                style={{ fontSize: "14px", color: "#667085" }}
               >
                 when I’m not behind a screen, you’ll probably spot me at the{" "}
                 <LinkPreview
@@ -263,6 +264,8 @@ const Navbar = () => {
                 <LinkPreview
                   className="inline font-medium hover:underline trasition duration-300 cursor-pointer !text-[#182230]"
                   url={"/https://maps.app.goo.gl/GSa7r9EvYmtjUgKu7"}
+                  isStatic={true}
+                  imageSrc={Traffic}
                 >
                   bangalore traffic
                 </LinkPreview>{" "}
@@ -276,10 +279,10 @@ const Navbar = () => {
 
             {/* work section */}
 
-            <div className="z-10 flex flex-col gap-2 w-full shrink-0 mt-8">
+            <div className="z-10 flex flex-col gap-2 w-full shrink-0 mt-2">
               <h2
                 className="inline font-medium mb-[16px] bg-[#dcfce7] px-1 w-fit"
-                style={{ fontSize: "16px", color: "#404040" }}
+                style={{ fontSize: "16px", color: "#182230" }}
               >
                 work
               </h2>
