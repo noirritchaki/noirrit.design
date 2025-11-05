@@ -16,6 +16,7 @@ import plans from "../assets/plans.png";
 import mainimg from "../assets/mockup.png";
 import arrowBack from "../assets/arrow.svg";
 import GoBack from "./GoBack";
+import Booking from "../assets/booking-hc.png";
 
 const healthCheckup = () => {
   return (
@@ -308,22 +309,45 @@ const healthCheckup = () => {
                     </h2>
                     <ul className="list-disc pl-5 space-y-2 text-sm text-[#182230] mt-4">
                       <li>
-                        Integrate the Booking Flow: Create a one-stop, in-app
-                        booking system for health checkups. Users should be able
-                        to select a checkup, choose a lab or service provider,
+                        <h2
+                          className="font-medium flex flex-row mb-2 mt-8"
+                          style={{
+                            fontSize: "14px",
+                            color: "#182230",
+                            lineHeight: "21px",
+                          }}
+                        >
+                          Integrate the Booking Flow:
+                        </h2>
+                        Create a one-stop, in-app booking system for health
+                        checkups. Users should be able to select a checkup,
                         schedule an appointment, and pay if needed, all within
-                        our app (no more redirection to third parties). ADD
-                        IMAGE HERE
+                        our app (no more redirection to third parties).
+                        <div className="pointer-events-none select-none">
+                          <div className="flex flex row justify-center rounded md:-mx-6 mt-8">
+                            <img src={Booking} alt="main image" />
+                          </div>
+                        </div>
                       </li>
                       <li>
-                        Personalize Checkup Options: Offer demographic-based
-                        checkup packages tailored to the user’s profile (age,
-                        gender) and health context. For example, a 25-year-old
-                        might see a “Young Adult Wellness Panel” while a
-                        60-year-old sees a “Senior Comprehensive Checkup” with
-                        screenings relevant to their age. This ensures users get
-                        relevant tests and not extraneous ones , improving both
-                        trust and health outcomes. ADD IMAGE HERE
+                        <h2
+                          className="font-medium flex flex-row mb-2 mt-8"
+                          style={{
+                            fontSize: "14px",
+                            color: "#182230",
+                            lineHeight: "21px",
+                          }}
+                        >
+                          Personalize Checkup Options:
+                        </h2>
+                        Offer demographic-based checkup packages tailored to the
+                        user’s profile (age, gender) and health context. For
+                        example, a 25-year-old might see a “Young Adult Wellness
+                        Panel” while a 60-year-old sees a “Senior Comprehensive
+                        Checkup” with screenings relevant to their age. This
+                        ensures users get relevant tests and not extraneous ones
+                        , improving both trust and health outcomes. ADD IMAGE
+                        HERE
                       </li>
                       <li>
                         Seamless End-to-End Journey: Unify the journey from
