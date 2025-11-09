@@ -9,6 +9,7 @@ import PlumWallet from "./components/plumWallet";
 import SparkleEffect from "./components/SparkleEffect";
 import CustomCursor from "./components/Cursor";
 import RandomSong from "./components/RandomSong";
+import Footer from "./components/Footer";
 
 const Home = () => (
   <div>
@@ -32,6 +33,7 @@ const App = () => {
         <Route path="/plumwallet" element={<PlumWallet />} />
         <Route path="/random-song" element={<RandomSong />} />
       </Routes>
+      <Footer />
     </Router>
   );
 };

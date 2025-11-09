@@ -34,7 +34,7 @@ const Navbar = () => {
   return (
     <div className="md:flex md:flex-row md:justify-center">
       <div className="md:min-w-[512px] md:w-full md:max-w-xl">
-        <div className="flex flex-col justify-start max-w-2xl px-8 py-36">
+        <div className="flex flex-col justify-start max-w-2xl px-8 pt-36 pb-8">
           {/* <div className="flex flex-col w-full mb-12"> */}
           <div className="relative">
             <CurrentlyPlaying />
@@ -416,7 +416,7 @@ const Navbar = () => {
           </motion.div>
         </div>
       </div>
-      <ConstructionFAB />
+      {/* <ConstructionFAB /> */}
     </div>
   );
 };
